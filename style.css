@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+}
+nav{
+    position: relative;
+    z-index: 2; 
+    font-weight: 500;  
+}
+nav .navbar-brand {
+    font-family: 'Rubik', sans-serif; /* Menggunakan font Rubik */
+    font-size: 2.5rem; /* Ukuran font besar untuk membuatnya menonjol */
+    color: #d4af37; /* Warna emas */
+    font-weight: 700; /* Berat font yang lebih tebal untuk kesan elegan */
+    text-shadow: 2px 2px 4px rgba(76, 75, 75, 0.3); /* Bayangan lembut */
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.031); /* Background transparan untuk kontras */
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+nav .navbar-collapse ul li a{
+    color:  white;
+}
+
+
+.hero {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,#3a2b0e83,#3e341765, rgba(19, 18, 18, 0.562));
+    z-index: 1;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0; /* Ensure the image is below the overlay */
+    transition: opacity 1s ease-in-out;
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    z-index: 2;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.015);
+}
+
+.hero-text .title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 3rem;
+    color: #d4af37; /* Gold color */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.742); /* Shadow for better contrast */
+}
+
+.hero-text .subtitle {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.712);
+    margin-top: 12px;
+}
+.hero img.active {
+    opacity: 1;
+}
+
+
+/* Container untuk hero-award */
+
+
+.button-custom {
+    background: linear-gradient(90deg, #bd901f, #e8b756); /* Gradient warna emas */
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem; /* Padding untuk ukuran tombol */
+    border: none;
+    border-radius: 25px; /* Membuat bentuk bulat pada tombol */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Tambahkan shadow untuk efek 3D */
+}
+
+.button-custom:hover {
+    transform: scale(1.05); /* Efek zoom sedikit saat hover */
+}
+
+.button-custom:focus {
+    outline: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .hero-text{
+        margin-left: 3rem;
+    }
+    .hero-text .title {
+        font-size: 2rem; 
+    }
+
+    .hero-text .subtitle {
+        font-size: 1rem; /* Reduce subtitle font size */
+        line-height: 1.5;
+        max-width: 90%;
+        word-break: break-word;
+    }
+
+    .button-custom {
+        font-size: 0.9rem; /* Adjust button size */
+        padding: 0.4rem 1.2rem;
+    }
+}
