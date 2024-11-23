@@ -3,19 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In House Dining</title>
+    <title>Puri Asri </title>
+    <link rel="icon" href="assets/logoPA-samping.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <!-- style bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- font google -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
+
+    <!-- Slick CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="assets/slick-1.8.1/slick/slick-theme.css">
+    <script type="text/javascript" src="assets/slick-1.8.1/slick/slick.js"></script>
+    <script type="text/javascript" src="assets/slick-1.8.1/slick/slick.min.js"></script>
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg">
-        <div class="container mt-3">
-          <a class="navbar-brand fs-4 ms-3 custom-button-nav" href="#">Logo</a>
+      <div class="container mt-3">
+          <div class="logo-overlay"></div>
+          <a class="navbar-brand d-flex align-items-center p-2" href="#" >
+            <img src="assets/logoPA-samping.png" alt="Logo" class="me-2" style="height: 50px;">
+        </a>
+
+        
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -56,9 +70,10 @@
           </div>
         </div>
       </nav>
-
-      <!-- hero -->
+     
+      <!-- hero --> 
       <div class="hero">
+       
         <img src="assets/commercial-1.png" class="hero-image active" alt="Hero Image 1">
         <img src="assets/subsidi.png" class="hero-image" alt="Hero Image 2">
         <div class="hero-text">
@@ -73,11 +88,296 @@
                 <img src="assets/5.jpg" class="img-award" alt="Award Image 5">
             </div>
         </div>
-        
+    </div>
+    <a href="https://wa.me/08111111" class="btn-whatsapp" target="_blank">
+      <i class="fa-brands fa-whatsapp text-white custom-whatsapp-icon" ></i>
+  </a>  
+    <section class="py-1 bg-light mb-2">
+     
+    
+      <div class="container">
+          <div class="row align-items-center">
+              <!-- Gambar -->
+              <div class="col-md-6 text-center mb-4 mb-md-0">
+                  <img src="assets/logoPA-samping.png" alt="Logo Puri Asri" class="img-fluid" style="max-width: 80%;">
+              </div>
+              <!-- Konten -->
+              <div class="col-md-6">
+                  <h2 class="section-title text-custom fw-bold mb-3">Seputar Puri Asri</h2>
+                  <p class="section-subtitle text-secondary fs-6">
+                      PT Graha Carina Sejati berdiri sejak Tahun 2016 di bidang Pengembang Perumahan Subsidi. Kami terus 
+                      melebarkan sayap dengan pembangunan Perumahan Subsidi Modern Puri Asri 1, 2, dan 3. Komitmen kami untuk 
+                      memberikan Kesejahteraan Keluarga Indonesia dengan menghadirkan Hunian yang Nyaman, Asri, dan Layak 
+                      bagi Masyarakat terus menjadi landasan bagi kami dalam setiap kesuksesan pembangunan.
+                  </p>
+                  <p class="section-subtitle text-secondary fs-6">
+                      Habis terjualnya Perumahan Subsidi Puri Asri 1 dan Puri Asri 2 Cileungsi menjadi bukti nyata 
+                      keberhasilan PT Graha Carina Sejati dalam memberikan kualitas dan pelayanan terbaik.
+                  </p>
+                  <div class="divider my-4" style="height: 2px; background-color: #ddd;"></div>
+                  <button class="button-custom btn-lg px-4 py-2 text-uppercase shadow-sm">
+                      Tentang Kami <i class="fa fa-arrow-right ms-2"></i>
+                  </button>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="py-3 bg-light mt-5 bg-custom">
+      <div class="container ">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Card 1 -->
+          <div class="col">
+              <div class="card text-center border-0 shadow-sm">
+                  <img src="assets/home-terjual.png" alt="Habis Terjual" class="mx-auto mt-4" style="max-width: 100px;">
+                  <div class="card-body">
+                      <h5 class="card-title fw-bold">Puri Asri 1</h5>
+                      <p class="text-muted">Jl. Palasari - Bojong Sentul, Mampir, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820</p>
+                      <p class="fw-bold mb-1">Jumlah : <span class="animated-number" data-target="125">0</span> Unit</p>
+                      <p class="fw-bold mb-1">Mulai : <span class="animated-number" data-target="2014">0</span> </p>
+                      <p class="fw-bold">Selesai : <span class="animated-number" data-target="2016">0</span></p>
+                  </div>
+              </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col">
+              <div class="card text-center border-0 shadow-sm">
+                  <img src="assets/home-terjual.png" alt="Habis Terjual" class="mx-auto mt-4" style="max-width: 100px;">
+                  <div class="card-body">
+                      <h5 class="card-title fw-bold">Puri Asri 2</h5>
+                      <p class="text-muted">Jl. Mpu, Mampir, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820</p>
+                      <p class="fw-bold mb-1">Jumlah : <span class="animated-number" data-target="1200">0</span>  Unit</p>
+                      <p class="fw-bold mb-1">Mulai : <span class="animated-number" data-target="2016">0</span></p>
+                      <p class="fw-bold">Selesai : <span class="animated-number" data-target="2021">0</span></p>
+                  </div>
+              </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col">
+              <div class="card text-center border-0 shadow-sm">
+                  <img src="assets/home-icon21.png" alt="Siap Huni" class="mx-auto mt-4" style="max-width: 100px;">
+                  <div class="card-body">
+                      <h5 class="card-title fw-bold">Puri Asri 3</h5>
+                      <p class="text-muted">Jl. Rw. Gembira, Sukamaju, Kec. Jonggol, Kabupaten Bogor, Jawa Barat 16830</p>
+                      <p class="fw-bold mb-1">Jumlah : <span class="animated-number" data-target="1442">0</span> Unit</p>
+                      <p class="fw-bold mb-1">Tersisa : <span class="animated-number" data-target="596">0</span> Unit</p>
+                      <p class="fw-bold">Mulai : <span class="animated-number" data-target="2021">0</span></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container my-5 mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-md-12 text-center mt-4">
+            <h3>Penawaran Terbaik</h3>
+          </div>
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card shadow-sm border-0 h-100">
+                  
+                    <div class="position-relative">
+                        <img src="assets/subsidi.png" class="card-img-top" alt="Subsidi" style="width: 100%; height: 200px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-bold">Subsidi</h5>
+                        <p class="card-text fw-bold animated-price" data-target="185000000">Rp 0</p>
+                        <ul class="list-unstyled two-column-list">
+                            <li><i class="fa fa-bed me-2"></i>2 rooms</li>
+                            <li><i class="fa fa-bath me-2"></i>1 baths</li>
+                            <li><i class="fa fa-car me-2"></i>1 carport</li>
+                            <li><i class="fa-solid fa-stairs me-2"></i> Lantai 1</li>
+                            <li><i class="fa-solid fa-up-down-left-right me-2"></i>LT 60m²  </li>
+                            <li><i class="fa-solid fa-house me-2"></i> LB 30m²</li>
+                        </ul>
+                        <button class="btn btn-warning w-100">See details</button>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- Card 2 -->
+            <div class="col">
+              <div class="card shadow-sm border-0">
+                  <div class="position-relative">
+                      <img src="assets/commercial-1.png" class="card-img-top" alt="Subsidi Plus" style="width: 100%; height: 200px; ">
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title text-success fw-bold">Subsidi Plus</h5>
+                      <p class="card-text fw-bold animated-price" data-target="215000000">Rp 0</p>
+                      <ul class="list-unstyled two-column-list">
+                          <li><i class="fa fa-bed me-2"></i>2 rooms</li>
+                          <li><i class="fa fa-bath me-2"></i>1 baths</li>
+                          <li><i class="fa fa-car me-2"></i>1 carport</li>
+                          <li><i class="fa-solid fa-stairs me-2"></i> Lantai 1</li>
+                          <li><i class="fa-solid fa-up-down-left-right me-2"></i>LT 60m²  </li>
+                          <li><i class="fa-solid fa-house me-2"></i> LB 30m²</li>
+                      </ul>
+                      <button class="btn btn-warning w-100">See details</button>
+                  </div>
+              </div>
+          </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="position-relative">
+                        <img src="assets/commercial-2.png" class="card-img-top" alt="Commercial" style="width: 100%; height: 200px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-bold">Commercial</h5>
+                        <p class="card-text fw-bold animated-price" data-target="325000000">Rp 0</p>
+                        <ul class="list-unstyled two-column-list">
+                            <li><i class="fa fa-bed me-2"></i>2 rooms</li>
+                            <li><i class="fa fa-bath me-2"></i>1 baths</li>
+                            <li><i class="fa fa-car me-2"></i>1 carport</li>
+                            <li><i class="fa-solid fa-stairs me-2"></i> Lantai 1</li>
+                            <li><i class="fa-solid fa-up-down-left-right me-2"></i>LT 60m²  </li>
+                            <li><i class="fa-solid fa-house me-2"></i> LB 36m²</li>
+                        </ul>
+                        <button class="btn btn-warning w-100">See details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <section class="bg-gold">
+      <div class="container py-5">
+        <h2 class="text-center text-white mb-5">Spesifikasi Perumahan Puri Asri</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <!-- Kolom 1 -->
+            <div class="col-md-4">
+                <div class="d-flex align-items-center mb-4">
+                    <div class="spec-icon d-flex justify-content-center align-items-center me-3">
+                      <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div>
+                        <h5 class="mb-1 text-white fw-bold">PONDASI</h5>
+                        <p class="mb-0 text-light">Batu Kali</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-4">
+                    <div class="spec-icon d-flex justify-content-center align-items-center me-3">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div>
+                        <h5 class="mb-1 text-white fw-bold">DINDING</h5>
+                        <p class="mb-0 text-light">Plester Dicat</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-4">
+                    <div class="spec-icon d-flex justify-content-center align-items-center me-3">
+                        <i class="fas fa-window-maximize"></i>
+                    </div>
+                    <div>
+                        <h5 class="mb-1 text-white fw-bold">KUSEN</h5>
+                        <p class="mb-0 text-light">Aluminium</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-4">
+                    <div class="spec-icon d-flex justify-content-center align-items-center me-3">
+                        <i class="fas fa-door-closed"></i>
+                    </div>
+                    <div>
+                        <h5 class="mb-1 text-white fw-bold">PINTU WC</h5>
+                        <p class="mb-0 text-light">PVC</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Kolom 2 -->
+            <div class="col-md-4">
+                <div class="d-flex align-items-center mb-4">
+                    <div class="spec-icon d-flex justify-content-center align-items-center me-3">
+                        <i class="fas fa-border-all"></i>
+                    </div>
+                    <div>
+                        <h5 class="mb-1 text-white fw-bold">LANTAI</h5>
+                        <p class="mb-0 text-light">Keramik</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-4">
+                    <div class="spec-icon d-flex justify-content-center align-items-center me-3">
+                      <i class="fa-solid fa-person-shelter"></i>
+                    </div>
+                    <div>
+                        <h5 class="mb-1 text-white fw-bold">PENTUP ATAP</h5>
+                        <p class="mb-0 text-light">Genteng Beton</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-4">
+                    <div class="spec-icon d-flex justify-content-center align-items-center me-3">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <div>
+                        <h5 class="mb-1 text-white fw-bold">RANGKA ATAP</h5>
+                        <p class="mb-0 text-light">Bajaringan</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-4">
+                    <div class="spec-icon d-flex justify-content-center align-items-center me-3">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div>
+                        <h5 class="mb-1 text-white fw-bold">SUMBER AIR</h5>
+                        <p class="mb-0 text-light">Sumur Pantek</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-white mt-3">
+                  <h5 class="fw-bold">SUBSIDI</h5>
+                  <ul class="">
+                      <li>Plafond: Eternit Lokal</li>
+                      <li>Pintu Kamar: Dua Triplek</li>
+                      <li>Sanitair: Kloset Jongkok</li>
+                      <li>Keramik: Ukuran 30 x 30</li>
+                  </ul>
+                  <h5 class="fw-bold">KOMERSIL</h5>
+                  <ul class="">
+                      <li>Plafond: Gipsum</li>
+                      <li>Pintu Kamar: Kayu Solid</li>
+                      <li>Sanitair: Kloset Duduk</li>
+                      <li>Keramik: Ukuran 40 x 40</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bagian Subsidi dan Komersil -->
+        <div class="row mt-5 text-white">
+            <div class="col-md-6">
+               
+            </div>
+            <div class="col-md-6">
+               
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="house-carausel">
+      <h2 class="text-center text-dark mb-5">Hadir Untuk Anda dan Keluarga Tercinta</h2>
+      <div class="step-carausel">
+        <img src="assets/tahap1.jpeg" alt="tahap1">
+        <img src="assets/tahap2.jpeg" alt="tahap2">
+        <img src="assets/tahap3.jpeg" alt="tahap3">
+        <img src="assets/tahap4.jpeg" alt="tahap4">
+        <img src="assets/tahap5.jpeg" alt="tahap5">
     </div>
     
-    <!-- bootstrap -->
+    </section>
+  
+    <!-- bootstrap --> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js" integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <script src="custom.js"></script>
+    
+   
+   
 </body>
 </html>

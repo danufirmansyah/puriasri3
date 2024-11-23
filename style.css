@@ -113,9 +113,149 @@ nav .navbar-collapse ul li a{
 .button-custom:focus {
     outline: none;
 }
+.navbar-brand {
+    /* background-color: #f7f7f7; Warna hitam */
+    background: linear-gradient(50deg, #fffffacb, #f5fff8da, #ffe1a4da); /* Warna hitam */
+    padding: 4px 6px; /* Jarak padding agar logo terlihat rapi */
+    border-radius: 20px; /* Membuat sudut sedikit melengkung */
+}
+
+.text-custom{
+    color:  #bd901f;   
+}
+.section-subtitle{
+    text-align: justify;
+    line-height: 1.8; /* Menambah spasi antar baris agar lebih rapi */
+    margin-bottom: 1.9rem;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
 
 
+.card-title {
+    font-size: 1.25rem;
+    color: #333;
+}
 
+.card-body p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.card-body .fw-bold {
+    color: #000;
+}
+.bg-custom{
+    background: linear-gradient(90deg, #bd901f, #e8b756);
+}
+.animated-number {
+    font-weight: bold;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+    
+}
+.animated-price {
+    font-size: 1.5rem;
+    color: #28a745;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.two-column-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Membagi menjadi 2 kolom */
+    gap: 10px; /* Memberikan jarak antar elemen */
+}
+
+.two-column-list li {
+    display: flex; /* Untuk menjaga ikon tetap sejajar dengan teks */
+    align-items: center; /* Ikon sejajar secara vertikal */
+    font-size: 0.9rem; /* Sesuaikan ukuran font */
+    color: #6c757d; /* Warna teks */
+}
+
+
+.btn-whatsapp {
+    position: fixed; /* Membuat tombol tetap di tempat saat scroll */
+    bottom: 20px; /* Jarak dari bawah halaman */
+    right: 20px; /* Jarak dari sisi kiri halaman */
+    background-color: #25D366; /* Warna latar belakang tombol WhatsApp */
+    border-radius: 50%; /* Membuat tombol berbentuk bulat */
+    width: 80px; /* Ukuran tombol */
+    height: 80px; /* Ukuran tombol */
+    display: flex; /* Menggunakan Flexbox */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    justify-content: center; /* Menyelaraskan item secara horizontal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    z-index: 1000;
+    transition: all 0.3s ease; /* Transisi yang halus */
+    animation: move-up-down 3s infinite;
+}
+
+.btn-whatsapp:hover {
+    opacity: 0.8;
+}
+.custom-whatsapp-icon{
+    font-size: 40px;
+}
+.bg-gold {
+    background-color: #c89d53;
+}
+
+.spec-icon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    color: #c89d53;
+    font-size: 24px;
+    border: 2px solid white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spec-icon:hover{
+    transform: scale(1.4);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+
+.house-carausel{
+    margin-top: 5rem !important;
+    margin-bottom: 7rem;
+}
+.step-carausel .slick-slide {
+    display: inline-block; /* Memastikan gambar muncul */
+}
+
+.step-carausel img {
+    width: 100%; /* Gambar mengisi lebar slide */
+    height: 300px; /* Menjaga proporsi gambar */
+    object-fit: cover; /* Mengatur gambar agar rapi */
+    padding: auto;
+    margin: 4px;
+}
+.step-carausel img:hover {
+        transform: scale(1.4);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+        cursor: pointer;
+    }
+
+
+@keyframes move-up-down {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px); /* Menggeser tombol ke atas */
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
 @media (max-width: 768px) {
     .hero-text{
         margin-left: 3rem;
@@ -135,4 +275,24 @@ nav .navbar-collapse ul li a{
         font-size: 0.9rem; /* Adjust button size */
         padding: 0.4rem 1.2rem;
     }
+
+    .section-subtitle{
+        text-align: justify;
+        line-height: 1.2; /* Menambah spasi antar baris agar lebih rapi */
+        margin-bottom: 1.5rem;
+        padding: 2px
+    }
+
+    .btn-whatsapp {
+        width: 60px; /* Ukuran lebih kecil untuk mobile */
+        height: 60px; /* Ukuran lebih kecil untuk mobile */
+        bottom: 15px; /* Jarak dari bawah sedikit lebih kecil */
+        right: 15px; /* Jarak dari sisi kanan sedikit lebih kecil */
+    }
+
+    .btn-whatsapp i {
+        font-size: 24px; /* Ukuran ikon lebih kecil */
+    }
 }
+
+
