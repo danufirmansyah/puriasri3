@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+    // modal pop up
+    var promoModal = new bootstrap.Modal(document.getElementById('promoModal'), {
+        backdrop: 'static', // Modal tidak akan tertutup ketika klik di luar
+        keyboard: false     // Menonaktifkan escape button untuk menutup
+      });
+      promoModal.show(); // Menampilkan modal
+    //   end modal
+
+
     // Hero Image Carousel
     let currentIndex = 0;
     const images = document.querySelectorAll('.hero .hero-image');
@@ -101,7 +111,7 @@ $(document).ready(function () {
         slidesToShow: 3,          // Jumlah slide yang terlihat
         slidesToScroll: 1,        // Jumlah slide yang digeser setiap kali
         autoplay: true,           // Mengaktifkan autoplay
-        autoplaySpeed: 2000,      // Durasi autoplay (ms)
+        autoplaySpeed: 1800,      // Durasi autoplay (ms)
         infinite: true,           // Loop tak terbatas
         arrows: false,            // Sembunyikan navigasi panah
         dots: true,               // Menambahkan navigasi titik (opsional)
@@ -122,3 +132,23 @@ $(document).ready(function () {
         ]
     });
 });
+
+
+  function modalImageHouse (house){
+    const modalContainer = document.getElementById('houseModal');
+    const modalImage = document.getElementById('houseModalImage')
+    modalImage.src = 'assets/' + house;
+    modalContainer.style.display = 'flex'
+  }
+
+  function closeImageModal(){
+    const modalContainer = document.getElementById('houseModal')
+    modalContainer.style.display = 'none'
+  }
+  
+window.addEventListener('click', (event) =>{
+    const modalContainer = document.getElementById('houseModal')
+    if(event.target === modalContainer){
+       modalContainer.style.display ='none';
+    }
+})

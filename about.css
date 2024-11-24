@@ -1,0 +1,408 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+}
+nav{
+    position: relative;
+    z-index: 2; 
+    font-weight: 500;  
+}
+nav .navbar-brand {
+    font-family: 'Rubik', sans-serif; /* Menggunakan font Rubik */
+    font-size: 2.5rem; /* Ukuran font besar untuk membuatnya menonjol */
+    color: #d4af37; /* Warna emas */
+    font-weight: 700; /* Berat font yang lebih tebal untuk kesan elegan */
+    text-shadow: 2px 2px 4px rgba(76, 75, 75, 0.3); /* Bayangan lembut */
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.031); /* Background transparan untuk kontras */
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+nav .navbar-collapse ul li a{
+    color:  white;
+}
+
+.navbar .navbar-nav .nav-item .active {
+    color: #c87b08;
+}
+.hero {
+    width: 100%;
+    height: auto; /* Full viewport height */
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to bottom,#3a2b0ec4,#3e3417cb, rgba(19, 18, 18, 0.848));
+    z-index: 1;
+}
+
+.hero .hero-image {
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0; /* Ensure the image is below the overlay */
+    transition: opacity 1s ease-in-out;
+}
+ .img-section-hero{
+        margin-top: 6rem;
+        width: 90%;
+        height: 65%;
+    }
+
+    .hero .logo-company {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+.section-title {
+    margin-top: 1rem;
+    font-size: 1.75rem;
+    color: #333;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* .hero-image {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  } */
+
+
+
+.hero img.active {
+    opacity: 1;
+}
+
+
+/* Container untuk hero-award */
+
+
+.button-custom {
+    background: linear-gradient(90deg, #bd901f, #e8b756); /* Gradient warna emas */
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem; /* Padding untuk ukuran tombol */
+    border: none;
+    border-radius: 25px; /* Membuat bentuk bulat pada tombol */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Tambahkan shadow untuk efek 3D */
+}
+
+.button-custom:hover {
+    transform: scale(1.05); /* Efek zoom sedikit saat hover */
+}
+
+.button-custom:focus {
+    outline: none;
+}
+.navbar-brand {
+    /* background-color: #f7f7f7; Warna hitam */
+    background: linear-gradient(50deg, #fffffacb, #f5fff8da, #ffe1a4da); /* Warna hitam */
+    padding: 4px 6px; /* Jarak padding agar logo terlihat rapi */
+    border-radius: 20px; /* Membuat sudut sedikit melengkung */
+}
+
+.text-custom{
+    color:  #bd901f;   
+}
+.section-subtitle{
+    text-align: justify;
+    line-height: 1.8; /* Menambah spasi antar baris agar lebih rapi */
+    margin-bottom: 1.9rem;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+
+.card-title {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.card-body .fw-bold {
+    color: #000;
+}
+.bg-custom{
+    background: linear-gradient(90deg, #bd901f, #e8b756);
+}
+.animated-number {
+    font-weight: bold;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+    
+}
+.animated-price {
+    font-size: 1.5rem;
+    color: #28a745;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.two-column-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Membagi menjadi 2 kolom */
+    gap: 10px; /* Memberikan jarak antar elemen */
+}
+
+.two-column-list li {
+    display: flex; /* Untuk menjaga ikon tetap sejajar dengan teks */
+    align-items: center; /* Ikon sejajar secara vertikal */
+    font-size: 0.9rem; /* Sesuaikan ukuran font */
+    color: #6c757d; /* Warna teks */
+}
+
+
+.btn-whatsapp {
+    position: fixed; /* Membuat tombol tetap di tempat saat scroll */
+    bottom: 20px; /* Jarak dari bawah halaman */
+    right: 20px; /* Jarak dari sisi kiri halaman */
+    background-color: #25D366; /* Warna latar belakang tombol WhatsApp */
+    border-radius: 50%; /* Membuat tombol berbentuk bulat */
+    width: 80px; /* Ukuran tombol */
+    height: 80px; /* Ukuran tombol */
+    display: flex; /* Menggunakan Flexbox */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    justify-content: center; /* Menyelaraskan item secara horizontal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    z-index: 1000;
+    transition: all 0.3s ease; /* Transisi yang halus */
+    animation: move-up-down 3s infinite;
+}
+
+.btn-whatsapp:hover {
+    opacity: 0.8;
+}
+.custom-whatsapp-icon{
+    font-size: 40px;
+}
+.bg-gold {
+    background-color: #c89d53;
+}
+
+.spec-icon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    color: #c89d53;
+    font-size: 24px;
+    border: 2px solid white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spec-icon:hover{
+    transform: scale(1.4);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+
+.house-carausel{
+    margin-top: 5rem !important;
+    margin-bottom: 7rem;
+}
+.step-carausel .slick-slide {
+    display: inline-block; /* Memastikan gambar muncul */
+}
+
+.step-carausel img {
+    width: 100%; /* Gambar mengisi lebar slide */
+    height: 300px; /* Menjaga proporsi gambar */
+    object-fit: cover; /* Mengatur gambar agar rapi */
+    padding: auto;
+    margin: 4px;
+}
+.step-carausel img:hover {
+        transform: scale(1.2);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+        cursor: pointer;
+    }
+
+    .modal {
+        display: none; /* Sembunyikan modal secara default */
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .modal-content {
+        margin: auto;
+        display: block;
+        max-width: 80%;
+        max-height: 80%;
+        border-radius: 8px;
+      }
+    
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    
+      .close:hover {
+        color: #f00;
+      }
+      .footer {
+        background: linear-gradient(to bottom, #d4a24c, #a97930);
+        color: white;
+      }
+      
+      .footer h5 {
+        color: #fff;
+      }
+      
+      .footer img {
+        filter: brightness(100%);
+        transition: transform 0.2s ease, filter 0.2s ease;
+      }
+      
+      .footer img:hover {
+        transform: scale(1.1);
+        filter: brightness(120%);
+      }
+      
+      .btn-light {
+        background-color: #fff;
+        color: #333;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+      
+      .btn-light:hover {
+        background-color: #f7d084;
+        transform: scale(1.1);
+      }
+
+      .shadow-img {
+        background-color: #fff; /* Warna putih untuk latar belakang */
+        padding: 10px; /* Spasi antara logo dan latar belakang */
+        border-radius: 8px; /* Sudut melengkung */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .shadow-img:hover {
+        transform: scale(1.05); /* Perbesar saat hover */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 
+                    0 12px 24px rgba(255, 255, 255, 0.2),
+                    0 0 15px 4px rgba(255, 223, 0, 0.5);  
+      }
+      .btn-close-custom {
+        background-color: #fff;
+        opacity: 1;
+        border: 2px solid #ccc;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        color: #000;
+      }
+      
+      .btn-close-custom:hover {
+        background-color: rgb(255, 74, 74);
+        border-color: rgb(255, 78, 78);
+        color: white;
+      }
+      
+      
+      
+
+@keyframes move-up-down {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px); /* Menggeser tombol ke atas */
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@media (max-width: 768px) {
+    .hero-text{
+        margin-left: 3rem;
+    }
+    .hero-text .title {
+        font-size: 2rem; 
+    }
+
+    .hero-text .subtitle {
+        font-size: 1rem; /* Reduce subtitle font size */
+        line-height: 1.5;
+        max-width: 90%;
+        word-break: break-word;
+    }
+    .logo-company {
+        width: 80%; /* Pastikan ukuran tetap proporsional */
+        max-width: 300px; /* Batas maksimum ukuran */
+        height: auto; /* Menjaga proporsi gambar */
+        margin: 0 auto; /* Tengah secara horizontal */
+        display: block; /* Pastikan elemen block-level */
+    }
+
+    .button-custom {
+        font-size: 0.9rem; /* Adjust button size */
+        padding: 0.4rem 1.2rem;
+    }
+
+    .section-subtitle{
+        text-align: justify;
+        line-height: 1.2; /* Menambah spasi antar baris agar lebih rapi */
+        margin-bottom: 1.5rem;
+        padding: 2px
+    }
+
+    .btn-whatsapp {
+        width: 60px; /* Ukuran lebih kecil untuk mobile */
+        height: 60px; /* Ukuran lebih kecil untuk mobile */
+        bottom: 15px; /* Jarak dari bawah sedikit lebih kecil */
+        right: 15px; /* Jarak dari sisi kanan sedikit lebih kecil */
+    }
+
+    .btn-whatsapp i {
+        font-size: 24px; /* Ukuran ikon lebih kecil */
+    }
+}
+
+
