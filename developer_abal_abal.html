@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puri Asri </title>
     <link rel="stylesheet" href="about.css">
-    <meta http-equiv="Content-Security-Policy" content="frame-src https://www.youtube.com/;">
 
     <!-- style bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,7 +23,7 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg shadow-sm">
       <div class="container mt-3">
           <div class="logo-overlay"></div>
           <a class="navbar-brand d-flex align-items-center p-2" href="#" >
@@ -32,8 +31,8 @@
         </a>
 
         
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
@@ -48,13 +47,13 @@
                   Tipe
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item text-dark" href="subsidi.html">Subsidi</a></li>
-                  <li><a class="dropdown-item text-dark" href="subsidi_plus.html">Subsidi Plus</a></li>
-                  <li><a class="dropdown-item text-dark" href="komersil.html">Komersil</a></li>
-                </ul>    
+                    <li><a class="dropdown-item text-dark" href="subsidi.html">Subsidi</a></li>
+                    <li><a class="dropdown-item text-dark" href="subsidi_plus.html">Subsidi Plus</a></li>
+                    <li><a class="dropdown-item text-dark" href="komersil.html">Komersil</a></li>
+                </ul>                
               </li>
               <li class="nav-item me-4">
-                <a class="nav-link active" aria-current="page" href="#">Fasilitas</a>
+                <a class="nav-link " aria-current="page" href="fasilitas.html">Fasilitas</a>
               </li>
               <li class="nav-item me-4">
                 <a class="nav-link" aria-current="page" href="kontak.html">Kontak</a>
@@ -63,10 +62,10 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dokumentasi
                 </a>
-                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item text-dark" href="#">Berita</a></li>
-                    <li><a class="dropdown-item text-dark" href="artikel.html">Artikel</a></li>
-                </ul>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-dark" href="#">Berita</a></li>
+                  <li><a class="dropdown-item text-dark" href="artikel.html">Artikel</a></li>
+              </ul>
               </li>
             </ul>
           </div>
@@ -75,55 +74,76 @@
      
       <!-- hero --> 
        <section>
-        <div class="hero container mb-5">
-          <div class="row">
-              <!-- Hero Image -->
-              <div class="col-md-12">
-                  <img src="assets/commercial-1.png" class="hero-image active" alt="Hero Image 1">
-              </div>
-              <!-- Logo Company -->
-              <div class="col-md-12 d-flex justify-content-center">
-                  <img src="assets/logoPA-samping.png" class="mt-5 logo-company" alt="Logo Company" style="width: 450px;">
-              </div>
-              <!-- About Section -->
-              <div class="col-md-4 mt-5">
-                  <div class="shadow m-4">
-                    <button class="border-0" onclick="modalImageHouse('sujud.jpg')">
-                        <img src="assets/sujud.jpg" class="card-img shadow-img" alt="About Image">
-                    </button>
+            <div class="hero container mb-5">
+            <div class="row">
+                <!-- Hero Image -->
+                <div class="col-md-12">
+                    <img src="assets/commercial-1.png" class="hero-image active" alt="Hero Image 1">
                 </div>
-                <h6 class="text-center">Taman Bermain</h6>
-              </div>
-              <div class="col-md-4 mt-5">
-                  <div class="card border-0 shadow m-4">
-                    <button class="border-0" onclick="modalImageHouse('taman-bermain.jpg')">
-                        <img src="assets/taman-bermain.jpg" class="card-img shadow-img" alt="About Image">
-                    </button>
-                  </div>
-                  <h6 class="text-center">Taman Bermain</h6>
-              </div>
-              <div class="col-md-4 mt-5">
-                  <div class="card border-0 shadow m-4">
-                    <button class="border-0" onclick="modalImageHouse('gate12.jpg')">
-                        <img src="assets/gate12.jpg" class="card-img shadow-img" alt="About Image">
-                    </button>
+                <!-- Logo Company -->
+                <div class="col-md-12  justify-content-center">
+                    <img src="assets/logoPA-samping.png" class="mt-5 logo-company" alt="Logo Company" style="width: 450px;">
                 </div>
-                <h6 class="text-center">Security 24 Jam (One Get System)</h6>
-              </div>
-          </div>
+             
+                <div class="row">
+                    <div class="col-md-12 text-center mt-5 mb-5">
+                        <h4>Keuntungan Membeli Rumah Subsidi</h4>
+                    </div>
+                        <div class="col-md-8 text-secondary" style="text-align: justify;">
+                            <p>
+                                Meski bentuk-bentuk subsidi rumah ada banyak, tidak sedikit orang yang masih ragu untuk membeli rumah subsidi. Padahal, ada banyak keuntungan rumah subsidi yang bisa diterima masyarakat. Jika anda masih ragu untuk membeli rumah subsidi, berikut beberapa keuntungan yang bisa dipertimbangkan
+                            </p>
+                            <ol>
+                                <li class="mt-2">
+                                    <strong>Harga dan cicilan terjangkau</strong> <br>
+                                    Rata-rata harga rumah subsidi berkisar antara Rp166–230 juta-an. Cicilan kredit rumahnya pun terjangkau. Kredit rumah subsidi menerapkan skema suku bunga KPR tetap atau fixed rate sebesar 5%.</li>
+                                <li class="mt-2">
+                                    <strong>Tenor pinjaman panjang</strong><br>
+                                Keuntungan lain membeli rumah dengan KPR bersubsidi adalah tenor pinjaman panjang hingga 20 tahun.
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card border-0 shadow " style="width: 350px; height: 300px;" >
+                                <img src="assets/dev-bodong.png" class="card-img shadow-img" alt="About Image" style="width: 350px; height: 300px;">
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-secondary" style="text-align: justify;">
+                            <ol start="3">
+                                <li class="mt-2">
+                                    <strong>TDP Rendah</strong><br>
+                                Untuk mengajukan KPR subsidi tidak perlu menyiapkan dana belasan hingga puluhan juta untuk mendapatkan rumah idaman.
+                                </li>
+                                <li class="mt-2">
+                                    <strong>Bebas PPN</strong><br>
+                                    Dengan membeli rumah subsidi, Anda tidak perlu membayar Pajak Pertambahan Nilai (PPN) rumah. Merujuk Peraturan Menteri Keuangan atau PMK No.60 tahun 2023
+                                </li>
+                                <li class="mt-2">
+                                    <strong>Syarat pengajuan KPR nya mudah</strong><br>
+                                    Keuntungan rumah subsidi selanjutnya adalah persyaratan pengajuan pembeliannya yang cukup mudah.
+                                </li>
+                                <li class="mt-2">
+                                    <strong>Dikelola developer terpercaya</strong><br>
+                                    Tidak sembarang pengembang bisa menjadi developer rumah subsidi, sebab mereka harus mengantongi izin dari pemerintah untuk mengembangkan perumahan tersebut. Maka itu, pemerintah juga hanya menjalin kerja sama dengan pengembang yang memiliki rekam jejak yang baik dalam proses pengerjaannya.
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="col-md-12 text-secondary-emphasis">
+                            <p>Itulah beberapa keuntungan membeli rumah subsidi diluar itu masih banyak lagi keuntungan lain yang dapat diperoleh contohnya seperti di Puri Asri 3 ada bonus potongan booking fee, bonus peralatan rumah tangga, dan lain-lain.</p>
+                            <p>Source : <a class="fw-semibold text-dark" style="cursor: pointer;" href="https://www.rumah123.com/panduan-properti/membeli-properti-66100-untung-rugi-beli-rumah-subsidi-id.html"> https://www.rumah123.com/panduan-properti/membeli-properti-66100-untung-rugi-beli-rumah-subsidi-id.html</a></p>
+                        </div>
+                </div>
+                
+                
+            </div>
 
-          <div id="houseModal" class="modal">
-            <span class="close" onclick="closeImageModal()">&times;</span>
-            <img id="houseModalImage" class="modal-content" src="" alt="Modal Image">
-          </div>
-      </div>
-      
-       </section>
+            </div>
+        </section>
     
-       <a href="https://api.whatsapp.com/send?phone=6282170007389&text=Hi%2C%20saya%20mendapatkan%20nomor%20ini%20dari%20Website.%20Saya%20tertarik%20dengan%20Perumahan%20Puri%20Asri%203%2C%20Jelaskan%20ke%20Saya%20untuk%20detailnya.%0A%0ANama%20Saya%20%3A" 
-       class="btn-whatsapp" target="_blank">
-         <i class="fa-brands fa-whatsapp text-white custom-whatsapp-icon" ></i>
-     </a>  
+        <a href="https://api.whatsapp.com/send?phone=6282170007389&text=Hi%2C%20saya%20mendapatkan%20nomor%20ini%20dari%20Website.%20Saya%20tertarik%20dengan%20Perumahan%20Puri%20Asri%203%2C%20Jelaskan%20ke%20Saya%20untuk%20detailnya.%0A%0ANama%20Saya%20%3A" 
+        class="btn-whatsapp" target="_blank">
+          <i class="fa-brands fa-whatsapp text-white custom-whatsapp-icon" ></i>
+      </a>  
   
 
       <footer class="footer py-5">
@@ -189,28 +209,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js" integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
 
-    <script>
-          function modalImageHouse (house){
-    const modalContainer = document.getElementById('houseModal');
-    const modalImage = document.getElementById('houseModalImage')
-    modalImage.src = 'assets/' + house;
-    modalContainer.style.display = 'flex'
-  }
-
-  function closeImageModal(){
-    const modalContainer = document.getElementById('houseModal')
-    modalContainer.style.display = 'none'
-  }
-  
-window.addEventListener('click', (event) =>{
-    const modalContainer = document.getElementById('houseModal')
-    if(event.target === modalContainer){
-       modalContainer.style.display ='none';
-    }
-})
-    </script>
-
-   
    
 </body>
 </html>

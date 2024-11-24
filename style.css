@@ -28,6 +28,9 @@ nav .navbar-collapse ul li a{
     color:  white;
 }
 
+.navbar .navbar-nav .nav-item .active {
+    color: #c87b08;
+}
 
 .hero {
     width: 100%;
@@ -354,6 +357,63 @@ nav .navbar-collapse ul li a{
     }
 }
 @media (max-width: 768px) {
+ /* Navbar Toggler */
+.navbar-toggler {
+    background-color: white !important; /* Warna latar belakang putih untuk toggler */
+    border: 2px solid #c87b08; /* Border emas */
+    border-radius: 8px; /* Membuat tombol melengkung */
+}
+
+/* Navbar Collapse */
+.navbar-collapse {
+    background-color: #222222 !important; /* Warna latar belakang hitam */
+    color: white;
+    padding: 10px; /* Memberikan ruang dalam menu */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan */
+}
+
+/* Link di Navbar */
+.navbar-collapse .nav-link,
+.navbar-collapse .dropdown-item {
+    color: white !important; /* Warna teks putih */
+    padding: 10px 15px; /* Tambahkan padding untuk spasi */
+    text-transform: uppercase; /* Ubah teks menjadi huruf besar */
+    font-weight: 500; /* Buat teks lebih tebal */
+    transition: all 0.3s ease; /* Transisi untuk hover */
+    border-radius: 5px; /* Melengkungkan item menu */
+}
+
+/* Hover Efek */
+.navbar-collapse .nav-link:hover,
+.navbar-collapse .dropdown-item:hover {
+    color: white; /* Warna teks tetap putih */
+    background-color: #c87b08; /* Latar belakang hover emas */
+    transform: scale(1.05); /* Sedikit memperbesar */
+    box-shadow: 0px 4px 10px rgba(200, 123, 8, 0.5); /* Efek bayangan hover */
+}
+
+/* Dropdown Menu */
+.navbar-collapse .dropdown-menu {
+    background-color: #222222; /* Warna hitam untuk dropdown */
+    border: none; /* Hilangkan border */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan */
+    border-radius: 8px; /* Sudut melengkung */
+}
+
+/* Dropdown Item */
+.navbar-collapse .dropdown-item {
+    color: white !important; /* Teks dropdown putih */
+    padding: 10px 20px; /* Spasi di dalam dropdown */
+    font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
+}
+
+/* Dropdown Item Hover */
+.navbar-collapse .dropdown-item:hover {
+    background-color: #c87b08; /* Latar belakang emas saat hover */
+    color: white; /* Warna teks tetap putih */
+}
+
     .hero-text{
         margin-left: 3rem;
     }
@@ -381,10 +441,10 @@ nav .navbar-collapse ul li a{
     }
 
     .btn-whatsapp {
-        width: 60px; /* Ukuran lebih kecil untuk mobile */
-        height: 60px; /* Ukuran lebih kecil untuk mobile */
-        bottom: 15px; /* Jarak dari bawah sedikit lebih kecil */
-        right: 15px; /* Jarak dari sisi kanan sedikit lebih kecil */
+        width: 60px !important; /* Ukuran lebih kecil untuk mobile */
+        height: 60px !important; /* Ukuran lebih kecil untuk mobile */
+        bottom: 15px !important; /* Jarak dari bawah sedikit lebih kecil */
+        right: 15px !important; /* Jarak dari sisi kanan sedikit lebih kecil */
     }
 
     .btn-whatsapp i {
