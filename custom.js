@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // modal pop up
-    var promoModal = new bootstrap.Modal(document.getElementById('promoModal'), {
-        backdrop: 'static', // Modal tidak akan tertutup ketika klik di luar
-        keyboard: false     // Menonaktifkan escape button untuk menutup
-      });
-      promoModal.show(); // Menampilkan modal
+    // var promoModal = new bootstrap.Modal(document.getElementById('promoModal'), {
+    //     backdrop: 'static', // Modal tidak akan tertutup ketika klik di luar
+    //     keyboard: false     // Menonaktifkan escape button untuk menutup
+    //   });
+    //   promoModal.show(); // Menampilkan modal
     //   end modal
 
 
