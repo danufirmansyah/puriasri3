@@ -120,9 +120,7 @@ nav .navbar-collapse ul li a{
     padding: 4px 6px; /* Jarak padding agar logo terlihat rapi */
     border-radius: 20px; /* Membuat sudut sedikit melengkung */
 }
-.section-one{
-    height: 80vh;
-}
+
 .text-custom{
     color:  #bd901f;   
 }
@@ -360,9 +358,7 @@ nav .navbar-collapse ul li a{
     .hero{
         height: 85vh;
     }
-    .section-one{
-        height: 111vh;
-    }
+   
  /* Navbar Toggler */
 .navbar-toggler {
     background-color: white !important; /* Warna latar belakang putih untuk toggler */
