@@ -382,6 +382,14 @@ nav .navbar-collapse ul li a{
         transform: translateY(0px);
     }
 }
+
+.partner-logo {
+    max-width: 150px;
+    height: auto;
+    object-fit: contain; /* Menjaga proporsi gambar */
+    display: block;
+    margin: 0 auto; /* Pusatkan gambar */
+  }
 @media (max-width: 768px) {
     .navbar-toggler {
         background-color: white !important;
