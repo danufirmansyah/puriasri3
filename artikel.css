@@ -567,9 +567,6 @@ nav .navbar-collapse ul li a{
     .hero h3{
           margin-left: 8rem;
       }
-    .hero a{
-          margin-left: 8rem;
-      }
 
    .section-title{
     margin-top: 30px;
@@ -584,6 +581,10 @@ nav .navbar-collapse ul li a{
 
     .container-logo-patner{
         margin-bottom: 5rem !important;
+    }
+
+    .card .card-img-overlay{
+        margin-top: 4rem !important;
     }
 }
 
@@ -659,10 +660,6 @@ nav .navbar-collapse ul li a{
     .hero h3{
           margin-left: 8rem;
       }
-    .hero a{
-          margin-left: 8rem;
-      }
-
    .section-title{
     margin-top: 30px;
    }
@@ -742,9 +739,6 @@ nav .navbar-collapse ul li a{
       margin-left: 8rem;
   }
   .hero h3{
-        margin-left: 8rem;
-    }
-  .hero a{
         margin-left: 8rem;
     }
 
@@ -838,10 +832,6 @@ nav .navbar-collapse ul li a{
     .hero h3{
           margin-left: 8rem;
       }
-    .hero a{
-          margin-left: 8rem;
-      }
-
    .section-title{
     margin-top: 30px;
    }

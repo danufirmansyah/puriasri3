@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puri Asri </title>
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" type="image/x-icon" id="favicon" 
+            href="assets/favicon.ico" />
     <!-- style bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
@@ -87,7 +90,7 @@
       <!-- hero --> 
       <div class="hero">
        
-        <img src="assets/commercial-1.png" class="hero-image active" alt="Hero Image 1">
+        <img src="assets/subsidi_plus_real.jpg" class="hero-image active" alt="Hero Image 1">
         <img src="assets/subsidi_real.jpg" class="hero-image" alt="Hero Image 2">
         <div class="hero-text">
             <h2 class="title text-uppercase">Puri Asri 3</h2>   
@@ -100,12 +103,12 @@
     class="btn-whatsapp" target="_blank">
       <i class="fa-brands fa-whatsapp text-white custom-whatsapp-icon" ></i>
   </a>  
-    <section class="py-1 bg-light mb-2">
+    <section class="py-1 bg-light mb-2 about">
       <div class="container p-2">
           <div class="row align-items-center">
               <!-- Gambar -->
               <div class="col-md-6 text-center mb-4 mb-md-0">
-                  <img src="assets/logoPA-samping.png" alt="Logo Puri Asri" class="img-fluid" style="max-width: 80%;">
+                  <img src="assets/logoPA-samping.png" alt="Logo Puri Asri" class="img-fluid logo-company" style="max-width: 80%;">
               </div>
               <!-- Konten -->
               <div class="col-md-6">
@@ -129,12 +132,12 @@
       </div>
     </section>
 
-    <section class="py-3 bg-light mt-5 bg-custom" s>
+    <section class="py-3 bg-light mt-5 bg-custom">
       <div class="container ">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <!-- Card 1 -->
           <div class="col">
-              <div class="card text-center border-0 shadow-sm">
+              <div class="card text-center border-0 shadow-sm card-info">
                   <img src="assets/home-terjual.png" alt="Habis Terjual" class="mx-auto mt-4" style="max-width: 100px;">
                   <div class="card-body">
                       <h5 class="card-title fw-bold">Puri Asri 1</h5>
@@ -147,7 +150,7 @@
           </div>
           <!-- Card 2 -->
           <div class="col">
-              <div class="card text-center border-0 shadow-sm">
+              <div class="card text-center border-0 shadow-sm card-info">
                   <img src="assets/home-terjual.png" alt="Habis Terjual" class="mx-auto mt-4" style="max-width: 100px;">
                   <div class="card-body">
                       <h5 class="card-title fw-bold">Puri Asri 2</h5>
@@ -160,7 +163,7 @@
           </div>
           <!-- Card 3 -->
           <div class="col">
-              <div class="card text-center border-0 shadow-sm">
+              <div class="card text-center border-0 shadow-sm card-info">
                   <img src="assets/home-icon21.png" alt="Siap Huni" class="mx-auto mt-4" style="max-width: 100px;">
                   <div class="card-body">
                       <h5 class="card-title fw-bold">Puri Asri 3</h5>
@@ -199,7 +202,7 @@
                             <li><i class="fa-solid fa-up-down-left-right me-2"></i>LT 60m²  </li>
                             <li><i class="fa-solid fa-house me-2"></i> LB 30m²</li>
                         </ul>
-                        <a class="btn btn-warning w-100 text-decoration-none" href="subsidi.html">See details</a>
+                        <a class="btn w-100 text-decoration-none bg-custom text-white shadow-img" href="subsidi.html">Selengkapnya</a>
                     </div>
                 </div>
             </div>
@@ -221,7 +224,7 @@
                           <li><i class="fa-solid fa-up-down-left-right me-2"></i>LT 60m²  </li>
                           <li><i class="fa-solid fa-house me-2"></i> LB 30m²</li>
                       </ul>
-                      <a class="btn btn-warning text-decoration-none w-100" href="subsidi_plus.html">See details</a>
+                      <a class="btn bg-custom text-decoration-none w-100 shadow-img text-white" href="subsidi_plus.html">Selengkapnya</a>
                   </div>
               </div>
           </div>
@@ -242,7 +245,7 @@
                             <li><i class="fa-solid fa-up-down-left-right me-2"></i>LT 60m²  </li>
                             <li><i class="fa-solid fa-house me-2"></i> LB 36m²</li>
                         </ul>
-                        <a class="btn btn-warning text-decoration-none w-100" href="komersil.html">See details</a>
+                        <a class="btn bg-custom text-decoration-none w-100 text-white shadow-img" href="komersil.html">Selengkapnya</a>
                     </div>
                 </div>
             </div>
@@ -381,54 +384,70 @@
     </section>
 
     <section class="awards-section py-5">
-        <div class="container">
-          <h2 class="text-center mb-5">Penghargaan</h2>
-          <div class="row g-4">
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="card">
-                <button class="btn btn-transparent" onclick="modalImageHouse('1.jpg')"> <img src="assets/1.jpg" class="card-img-top" alt="Penghargaan 4"></button>
-                <div class="card-body text-center">
-                  <p class="card-title fw-bold">Certificate of Appreciation</p>
-                </div>
+      <div class="container">
+        <h2 class="text-center mb-5">Penghargaan</h2>
+        <div class="row g-4 justify-content-center">
+          <!-- Kolom 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card bg-awward shadow-img">
+              <button class="btn btn-transparent" onclick="modalImageHouse('1.jpg')">
+                <img src="assets/1.jpg" class="card-img-top" alt="Penghargaan 1">
+              </button>
+              <div class="card-body text-center">
+                <p class="card-title fw-bold text-white">Loyalty Developer</p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="card">
-                <button class="btn btn-transparent" onclick="modalImageHouse('2.jpeg')"> <img src="assets/2.jpeg" class="card-img-top" alt="Penghargaan 4"></button>
-                <div class="card-body text-center">
-                  <p class="card-title fw-bold">3rd Rank BTN 2023</p>
-                </div>
+          </div>
+          <!-- Kolom 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card bg-awward shadow-img">
+              <button class="btn btn-transparent" onclick="modalImageHouse('2.jpeg')">
+                <img src="assets/2.jpeg" class="card-img-top" alt="Penghargaan 2">
+              </button>
+              <div class="card-body text-center">
+                <p class="card-title fw-bold text-white">3rd Rank The Biggest Mortgage</p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="card">
-                <button class="btn btn-transparent" onclick="modalImageHouse('3.jpeg')"> <img src="assets/3.jpeg" class="card-img-top" alt="Penghargaan 4"></button>
-                <div class="card-body text-center">
-                  <p class="card-title fw-bold">Piagam Penghargaan</p>
-                </div>
+          </div>
+          <!-- Kolom 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card bg-awward shadow-img">
+              <button class="btn btn-transparent" onclick="modalImageHouse('3.jpeg')">
+                <img src="assets/3.jpeg" class="card-img-top" alt="Penghargaan 3">
+              </button>
+              <div class="card-body text-center">
+                <p class="card-title fw-bold text-white">Pembiayaan Komersial Terbaik</p>
               </div>
             </div>
-            <div class="col-lg-2"></div>
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="card">
-                <button class="btn btn-transparent" onclick="modalImageHouse('4.jpg')"> <img src="assets/4.jpg" class="card-img-top" alt="Penghargaan 4"></button>
-                <div class="card-body text-center">
-                  <p class="card-title fw-bold">Award Trophy</p>
-                </div>
+          </div>
+          <!-- Kolom 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card bg-awward shadow-img">
+              <button class="btn btn-transparent" onclick="modalImageHouse('4.jpg')">
+                <img src="assets/4.jpg" class="card-img-top" alt="Penghargaan 4">
+              </button>
+              <div class="card-body text-center">
+                <p class="card-title fw-bold text-white">Award Trophy</p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="card">
-                <button class="btn btn-transparent" onclick="modalImageHouse('5.jpg')"> <img src="assets/5.jpg" class="card-img-top" alt="Penghargaan 4"></button>
-                <div class="card-body text-center">
-                  <p class="card-title fw-bold">Best Developer Award</p>
-                </div>
+          </div>
+          <!-- Kolom 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card bg-awward shadow-img">
+              <button class="btn btn-transparent" onclick="modalImageHouse('5.jpg')">
+                <img src="assets/5.jpg" class="card-img-top" alt="Penghargaan 5">
+              </button>
+              <div class="card-body text-center">
+                <p class="card-title fw-bold text-white">Best Developer Award</p>
               </div>
             </div>
-            <div class="col-lg-2"></div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    
+    
+    
       <section class="mt-3 mb-3">
             <div class="row mx-0 ">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4026.5458235347724!2d107.05151311061796!3d-6.445507093518881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699773500f5771%3A0xd5d9242b28a58b5d!2sPuri%20Asri%203!5e1!3m2!1sid!2sid!4v1732360986767!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -437,15 +456,15 @@
         
     </section>
       <footer class="footer py-5">
-        <div class="container">
+        <div class="container container-logo-patner">
           <div class="row text-white">
             <!-- Logo Section -->
-            <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+            <div class="col-md-4 text-center text-md-start mb-4 mb-md-0 mb-sm-0">
               <img src="assets/logo-footer.png" alt="Puri Asri Logo" class="mb-3" style="max-width: 150px;">
             </div>
       
             <!-- Marketing Gallery and Office Hours -->
-            <div class="col-md-4 text-center mb-4 mb-md-0">
+            <div class="col-md-4 text-center mb-4 mb-md-0 mb-sm-0">
               <h5 class="fw-bold">Marketing Gallery</h5>
               <p class="mb-1">Jl. Rw. Gembira, Sukamaju, Kec. Jonggol, Bogor</p>
               <p class="mb-3">Jawa Barat 16830</p>
@@ -466,29 +485,29 @@
             <div class="col-md-4 text-center text-md-end">
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="container text-center">
-                      <h5 class="fw-bold mb-4">Bekerjasama Dengan:</h5>
+                    <div class="container text-center ">
                       <div class="row justify-content-center align-items-center">
-                        <div class="col-lg-6 col-md-12 mb-3">
-                          <img src="assets/btn.png" alt="BTN Logo" class="partner-logo shadow-img" style="height: 45px; width: 150px;">
+                        <h5 class="fw-bold mb-4">Bekerjasama Dengan:</h5>
+                        <div class="col-lg-6 col-md-6 mb-3 col-sm-6 ">
+                          <img src="assets/btn.png" alt="BTN Logo" class="partner-logo shadow-img" style="height: 45px; ">
                         </div>
-                        <div class="col-lg-6 col-md-12 mb-3">
-                          <img src="assets/btn-syariah.png" alt="BTN Syariah Logo" class="partner-logo shadow-img" style="height: 45px; width: 150px;">
+                        <div class="col-lg-6 col-md-6 mb-3 col-sm-6">
+                          <img src="assets/btn-syariah.png" alt="BTN Syariah Logo" class="partner-logo shadow-img" style="height: 45px; ">
                         </div>
-                        <div class="col-lg-6 col-md-12 mb-3">
-                          <img src="assets/bri.png" alt="BRI Logo" class="partner-logo shadow-img" style="height: 45px; width: 150px;">
+                        <div class="col-lg-6 col-md-6 col-sm-6 mb-3">
+                          <img src="assets/bri.png" alt="BRI Logo" class="partner-logo shadow-img" style="height: 45px; ">
                         </div>
-                        <div class="col-lg-6 col-md-12 mb-3">
-                          <img src="assets/bankdki.jpg" alt="BANK DKI Logo" class="partner-logo shadow-img" style="height: 45px; width: 150px;">
+                        <div class="col-lg-6 col-md-6 col-sm-6 mb-3">
+                          <img src="assets/bankdki.jpg" alt="BANK DKI Logo" class="partner-logo shadow-img" style="height: 45px; ">
                         </div>
-                        <div class="col-lg-6 col-md-12 mb-3">
-                          <img src="assets/bankbjb.png" alt="Bank BJB Logo" class="partner-logo shadow-img">
+                        <div class="col-lg-6 col-md-6 col-sm-6 mb-3">
+                          <img src="assets/bankbjb.png" alt="Bank BJB Logo"  class="partner-logo shadow-img" style="height: 85px; ">
                         </div>
-                        <div class="col-lg-6 col-md-12 mb-3">
-                          <img src="assets/bjb-syariah.png" alt="BJB Syariah Logo" class="partner-logo shadow-img" style="height: 85px; width: 150px;">
+                        <div class="col-lg-6 col-md-6 col-sm-6 mb-3">
+                          <img src="assets/bjb-syariah.png" alt="BJB Syariah Logo" class="partner-logo shadow-img" style="height: 85px; ">
                         </div>
-                        <div class="col-12 col-md-12 mb-3">
-                          <img src="assets/pupr.png" alt="PUPR Logo" class="partner-logo shadow-img">
+                        <div class="col-12 col-md-12 col-sm-12 mb-3">
+                          <img src="assets/pupr.png" alt="PUPR Logo" class="partner-logo shadow-img" style="">
                         </div>
                       </div>
                     </div>
