@@ -1,0 +1,19 @@
+@media (max-width: 490px) {
+    .img-house {
+        display: flex; /* Mengubah elemen menjadi Flexbox */
+        flex-direction: column; /* Membuat elemen dalam kolom */
+        justify-content: center; /* Memusatkan elemen secara vertikal */
+        align-items: center; /* Memusatkan elemen secara horizontal */
+        margin-left: 0.8rem !important;
+    }
+}
+
+@media(width:540px){
+    .img-house {
+        display: flex; /* Mengubah elemen menjadi Flexbox */
+        flex-direction: column; /* Membuat elemen dalam kolom */
+        justify-content: center; /* Memusatkan elemen secara vertikal */
+        align-items: center; /* Memusatkan elemen secara horizontal */
+        margin-left: 0.8rem !important;
+    }
+}

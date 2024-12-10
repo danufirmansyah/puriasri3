@@ -208,9 +208,6 @@ nav .navbar-collapse ul li a{
 .bg-gold {
     background-color: #c89d53;
 }
-/* .awards-section{
-    background: #c89d53;
-} */
 .bg-awward {
     background-color: #c89d53 !important; /* Warna emas */
     border-radius: 15px; /* Opsional, tambahkan jika dibutuhkan */
@@ -244,8 +241,8 @@ nav .navbar-collapse ul li a{
 }
 
 .house-carausel{
-    margin-top: 5rem !important;
-    margin-bottom: 7rem;
+    margin-top: 3rem !important;
+    margin-bottom: 4rem;
 }
 .step-carausel .slick-slide {
     display: inline-block; /* Memastikan gambar muncul */
@@ -383,72 +380,204 @@ nav .navbar-collapse ul li a{
     display: block;
     margin: 0 auto; /* Pusatkan gambar */
   }
+
+@media (max-width:1024px){
+    .card-info{
+        height: 340px !important;
+    }
+    .hero h2{
+        margin-left: 8rem;
+    }
+    .hero h3{
+          margin-left: 8rem;
+      }
+    .hero a{
+          margin-left: 8rem;
+      }
   
+
+    .partner-logo {
+        width: 140px !important;
+        height: auto;
+        object-fit: contain; /* Menjaga proporsi gambar */
+        display: block;
+        margin: 0 auto; /* Pusatkan gambar */
+      }
+}
+ 
+
+@media(max-width:820px){
+        /* Navbar Toggler */
+    .navbar-toggler {
+        background-color: white !important; /* Warna latar belakang putih untuk toggler */
+        border: 2px solid #c87b08; /* Border emas */
+        border-radius: 8px; /* Membuat tombol melengkung */
+    }
+
+    /* Navbar Collapse */
+    .navbar-collapse {
+        background-color: #222222 !important; /* Warna latar belakang hitam */
+        color: white;
+        padding: 10px; /* Memberikan ruang dalam menu */
+        border-radius: 10px; /* Sudut melengkung */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan */
+    }
+
+    /* Link di Navbar */
+    .navbar-collapse .nav-link,
+    .navbar-collapse .dropdown-item {
+        color: white !important; /* Warna teks putih */
+        padding: 10px 15px; /* Tambahkan padding untuk spasi */
+        text-transform: uppercase; /* Ubah teks menjadi huruf besar */
+        font-weight: 500; /* Buat teks lebih tebal */
+        transition: all 0.3s ease; /* Transisi untuk hover */
+        border-radius: 5px; /* Melengkungkan item menu */
+    }
+
+    /* Hover Efek */
+    .navbar-collapse .nav-link:hover,
+    .navbar-collapse .dropdown-item:hover {
+        color: white; /* Warna teks tetap putih */
+        background-color: #c87b08; /* Latar belakang hover emas */
+        transform: scale(1.05); /* Sedikit memperbesar */
+        box-shadow: 0px 4px 10px rgba(200, 123, 8, 0.5); /* Efek bayangan hover */
+    }
+
+    /* Dropdown Menu */
+    .navbar-collapse .dropdown-menu {
+        background-color: #222222; /* Warna hitam untuk dropdown */
+        border: none; /* Hilangkan border */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan */
+        border-radius: 8px; /* Sudut melengkung */
+    }
+
+    /* Dropdown Item */
+    .navbar-collapse .dropdown-item {
+        color: white !important; /* Teks dropdown putih */
+        padding: 10px 20px; /* Spasi di dalam dropdown */
+        font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
+    }
+
+    /* Dropdown Item Hover */
+    .navbar-collapse .dropdown-item:hover {
+        background-color: #c87b08; /* Latar belakang emas saat hover */
+        color: white; /* Warna teks tetap putih */
+    }
+    .hero h2{
+        margin-left: 8rem;
+    }
+    .hero h3{
+          margin-left: 8rem;
+      }
+    .hero a{
+          margin-left: 8rem;
+      }
+    .card-info{
+        height: 360px !important;
+    }
+    .partner-logo {
+        width: 95px !important;
+        height: auto;
+        object-fit: contain; /* Menjaga proporsi gambar */
+        display: block;
+        margin: 0 auto; /* Pusatkan gambar */
+      }
+}
+@media(min-width:853px) and (max-width:890px){
+        /* Navbar Toggler */
+    .navbar-toggler {
+        background-color: white !important; /* Warna latar belakang putih untuk toggler */
+        border: 2px solid #c87b08; /* Border emas */
+        border-radius: 8px; /* Membuat tombol melengkung */
+    }
+
+    /* Navbar Collapse */
+    .navbar-collapse {
+        background-color: #222222 !important; /* Warna latar belakang hitam */
+        color: white;
+        padding: 10px; /* Memberikan ruang dalam menu */
+        border-radius: 10px; /* Sudut melengkung */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan */
+    }
+
+    /* Link di Navbar */
+    .navbar-collapse .nav-link,
+    .navbar-collapse .dropdown-item {
+        color: white !important; /* Warna teks putih */
+        padding: 10px 15px; /* Tambahkan padding untuk spasi */
+        text-transform: uppercase; /* Ubah teks menjadi huruf besar */
+        font-weight: 500; /* Buat teks lebih tebal */
+        transition: all 0.3s ease; /* Transisi untuk hover */
+        border-radius: 5px; /* Melengkungkan item menu */
+    }
+
+    /* Hover Efek */
+    .navbar-collapse .nav-link:hover,
+    .navbar-collapse .dropdown-item:hover {
+        color: white; /* Warna teks tetap putih */
+        background-color: #c87b08; /* Latar belakang hover emas */
+        transform: scale(1.05); /* Sedikit memperbesar */
+        box-shadow: 0px 4px 10px rgba(200, 123, 8, 0.5); /* Efek bayangan hover */
+    }
+
+    /* Dropdown Menu */
+    .navbar-collapse .dropdown-menu {
+        background-color: #222222; /* Warna hitam untuk dropdown */
+        border: none; /* Hilangkan border */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan */
+        border-radius: 8px; /* Sudut melengkung */
+    }
+
+    /* Dropdown Item */
+    .navbar-collapse .dropdown-item {
+        color: white !important; /* Teks dropdown putih */
+        padding: 10px 20px; /* Spasi di dalam dropdown */
+        font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
+    }
+
+    /* Dropdown Item Hover */
+    .navbar-collapse .dropdown-item:hover {
+        background-color: #c87b08; /* Latar belakang emas saat hover */
+        color: white; /* Warna teks tetap putih */
+    }
+    .hero h2{
+        margin-left: 8rem;
+    }
+    .hero h3{
+          margin-left: 8rem;
+      }
+    .hero a{
+          margin-left: 8rem;
+      }
+    .card-info{
+        height: 360px !important;
+    }
+    .partner-logo {
+        width: 95px !important;
+        height: auto;
+        object-fit: contain; /* Menjaga proporsi gambar */
+        display: block;
+        margin: 0 auto; /* Pusatkan gambar */
+      }
+}
+
 
 @media (max-width: 768px) {
     .hero{
         height: 85vh;
     }
-    
- /* Navbar Toggler */
-.navbar-toggler {
-    background-color: white !important; /* Warna latar belakang putih untuk toggler */
-    border: 2px solid #c87b08; /* Border emas */
-    border-radius: 8px; /* Membuat tombol melengkung */
-}
-
-/* Navbar Collapse */
-.navbar-collapse {
-    background-color: #222222 !important; /* Warna latar belakang hitam */
-    color: white;
-    padding: 10px; /* Memberikan ruang dalam menu */
-    border-radius: 10px; /* Sudut melengkung */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan */
-}
-
-/* Link di Navbar */
-.navbar-collapse .nav-link,
-.navbar-collapse .dropdown-item {
-    color: white !important; /* Warna teks putih */
-    padding: 10px 15px; /* Tambahkan padding untuk spasi */
-    text-transform: uppercase; /* Ubah teks menjadi huruf besar */
-    font-weight: 500; /* Buat teks lebih tebal */
-    transition: all 0.3s ease; /* Transisi untuk hover */
-    border-radius: 5px; /* Melengkungkan item menu */
-}
-
-/* Hover Efek */
-.navbar-collapse .nav-link:hover,
-.navbar-collapse .dropdown-item:hover {
-    color: white; /* Warna teks tetap putih */
-    background-color: #c87b08; /* Latar belakang hover emas */
-    transform: scale(1.05); /* Sedikit memperbesar */
-    box-shadow: 0px 4px 10px rgba(200, 123, 8, 0.5); /* Efek bayangan hover */
-}
-
-/* Dropdown Menu */
-.navbar-collapse .dropdown-menu {
-    background-color: #222222; /* Warna hitam untuk dropdown */
-    border: none; /* Hilangkan border */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan */
-    border-radius: 8px; /* Sudut melengkung */
-}
-
-/* Dropdown Item */
-.navbar-collapse .dropdown-item {
-    color: white !important; /* Teks dropdown putih */
-    padding: 10px 20px; /* Spasi di dalam dropdown */
-    font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
-}
-
-/* Dropdown Item Hover */
-.navbar-collapse .dropdown-item:hover {
-    background-color: #c87b08; /* Latar belakang emas saat hover */
-    color: white; /* Warna teks tetap putih */
-}
+    .hero h2{
+        margin-left: 0.5rem;
+    }
+    .hero h3{
+          margin-left: 0.5rem;
+      }
+    .hero a{
+          margin-left: 0.5rem;
+      }
 
     .hero-text{
-        margin-left: 3rem;
+        margin-left: 2.2rem;
     }
     .hero-text .title {
         font-size: 2rem; 
@@ -457,7 +586,7 @@ nav .navbar-collapse ul li a{
     .hero-text .subtitle {
         font-size: 1rem; /* Reduce subtitle font size */
         line-height: 1.5;
-        max-width: 90%;
+        /* max-width: 90%; */
         word-break: break-word;
     }
    
@@ -484,7 +613,7 @@ nav .navbar-collapse ul li a{
         font-size: 24px; /* Ukuran ikon lebih kecil */
     }
     .partner-logo {
-        width: 150px !important;
+        width: 145px !important;
         height: auto;
         object-fit: contain; /* Menjaga proporsi gambar */
         display: block;
@@ -493,233 +622,69 @@ nav .navbar-collapse ul li a{
     
    
 }
-/* 
-@media(max-width:1000px){
-    .partner-logo {
-        width: 140px !important;
+
+
+@media (width:390px){
+    .hero h2{
+        margin-left: 1.8rem;
+    }
+    .hero h3{
+          margin-left: 1.8rem;
       }
-} */
-@media (width: 820px)  {
-    .container-logo-patner{
-        margin-bottom: 6rem !important;
-       }
+    .hero a{
+          margin-left: 1.8rem;
+      }
+    .about{
+        margin-top: 40px;
+    }
+}
+@media (min-width:412px) and (max-width:430px){
+    .hero h2{
+        margin-left: 1.4rem;
+    }
+    .hero h3{
+          margin-left: 1.4rem;
+      }
+    .hero a{
+          margin-left: 1.4rem;
+      }
+    .about{
+        margin-top: 45px;
+    }
+}
+
+
+ 
+@media(min-width:768px){
+    .about{
+        margin-top: 52px;
+    }
     .partner-logo {
-        width: 100px !important;
+        width: 90px !important;
         height: auto;
         object-fit: contain; /* Menjaga proporsi gambar */
         display: block;
-        margin: 0 auto;
+        margin: 0 auto; /* Pusatkan gambar */
       }
-          
-
-      .navbar-toggler {
-        background-color: white !important; /* Warna latar belakang putih untuk toggler */
-        border: 2px solid #c87b08; /* Border emas */
-        border-radius: 8px; /* Membuat tombol melengkung */
-    }
-    
-    /* Navbar Collapse */
-    .navbar-collapse {
-        background-color: #222222 !important; /* Warna latar belakang hitam */
-        color: white;
-        padding: 10px; /* Memberikan ruang dalam menu */
-        border-radius: 10px; /* Sudut melengkung */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan */
-    }
-    
-    /* Link di Navbar */
-    .navbar-collapse .nav-link,
-    .navbar-collapse .dropdown-item {
-        color: white !important; /* Warna teks putih */
-        padding: 10px 15px; /* Tambahkan padding untuk spasi */
-        text-transform: uppercase; /* Ubah teks menjadi huruf besar */
-        font-weight: 500; /* Buat teks lebih tebal */
-        transition: all 0.3s ease; /* Transisi untuk hover */
-        border-radius: 5px; /* Melengkungkan item menu */
-    }
-    
-    /* Hover Efek */
-    .navbar-collapse .nav-link:hover,
-    .navbar-collapse .dropdown-item:hover {
-        color: white; /* Warna teks tetap putih */
-        background-color: #c87b08; /* Latar belakang hover emas */
-        transform: scale(1.05); /* Sedikit memperbesar */
-        box-shadow: 0px 4px 10px rgba(200, 123, 8, 0.5); /* Efek bayangan hover */
-    }
-    
-    /* Dropdown Menu */
-    .navbar-collapse .dropdown-menu {
-        background-color: #222222; /* Warna hitam untuk dropdown */
-        border: none; /* Hilangkan border */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan */
-        border-radius: 8px; /* Sudut melengkung */
-    }
-    
-    /* Dropdown Item */
-    .navbar-collapse .dropdown-item {
-        color: white !important; /* Teks dropdown putih */
-        padding: 10px 20px; /* Spasi di dalam dropdown */
-        font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
-    }
-    
-    /* Dropdown Item Hover */
-    .navbar-collapse .dropdown-item:hover {
-        background-color: #c87b08; /* Latar belakang emas saat hover */
-        color: white; /* Warna teks tetap putih */
-    }
-    .hero h2{
-        margin-left: 8rem;
-    }
-    .hero h3{
-          margin-left: 8rem;
-      }
-    .hero a{
-          margin-left: 8rem;
-      }
-
-   .section-title{
-    margin-top: 30px;
-   }
-   .card-info{
-    height: 360px !important;
-   }
-}
-
-@media (width: 1200px){
-    .navbar-toggler {
-        background-color: white !important; /* Warna latar belakang putih untuk toggler */
-        border: 2px solid #c87b08; /* Border emas */
-        border-radius: 8px; /* Membuat tombol melengkung */
-    }
-    
-    /* Navbar Collapse */
-    .navbar-collapse {
-        background-color: #222222 !important; /* Warna latar belakang hitam */
-        color: white;
-        padding: 10px; /* Memberikan ruang dalam menu */
-        border-radius: 10px; /* Sudut melengkung */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan */
-    }
-    
-    /* Link di Navbar */
-    .navbar-collapse .nav-link,
-    .navbar-collapse .dropdown-item {
-        color: white !important; /* Warna teks putih */
-        padding: 10px 15px; /* Tambahkan padding untuk spasi */
-        text-transform: uppercase; /* Ubah teks menjadi huruf besar */
-        font-weight: 500; /* Buat teks lebih tebal */
-        transition: all 0.3s ease; /* Transisi untuk hover */
-        border-radius: 5px; /* Melengkungkan item menu */
-    }
-    
-    /* Hover Efek */
-    .navbar-collapse .nav-link:hover,
-    .navbar-collapse .dropdown-item:hover {
-        color: white; /* Warna teks tetap putih */
-        background-color: #c87b08; /* Latar belakang hover emas */
-        transform: scale(1.05); /* Sedikit memperbesar */
-        box-shadow: 0px 4px 10px rgba(200, 123, 8, 0.5); /* Efek bayangan hover */
-    }
-    
-    /* Dropdown Menu */
-    .navbar-collapse .dropdown-menu {
-        background-color: #222222; /* Warna hitam untuk dropdown */
-        border: none; /* Hilangkan border */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan */
-        border-radius: 8px; /* Sudut melengkung */
-    }
-    
-    /* Dropdown Item */
-    .navbar-collapse .dropdown-item {
-        color: white !important; /* Teks dropdown putih */
-        padding: 10px 20px; /* Spasi di dalam dropdown */
-        font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
-    }
-    
-    /* Dropdown Item Hover */
-    .navbar-collapse .dropdown-item:hover {
-        background-color: #c87b08; /* Latar belakang emas saat hover */
-        color: white; /* Warna teks tetap putih */
-    }
-
-    .hero h2{
-        margin-left: 8rem;
-    }
-    .hero h3{
-          margin-left: 8rem;
-      }
-    .hero a{
-          margin-left: 8rem;
-      }
-
-   .section-title{
-    margin-top: 30px;
-   }
-   .card-info{
-    height: 360px !important;
-   }
-}
-
-@media(width:1024px){
-    .hero h2{
-        margin-left: 8rem;
-    }
-    .hero h3{
-          margin-left: 8rem;
-      }
-    .hero a{
-          margin-left: 8rem;
-      }
-
-   .section-title{
-    margin-top: 30px;
-   }
-   .card-info{
-    height: 360px !important;
-   }
-
-   .partner-logo {
-    width: 120px !important;
-    height: auto;
-    object-fit: contain; /* Menjaga proporsi gambar */
-    display: block;
-    margin: 0 auto;
-  }
-  .container-logo-patner{
-    margin-bottom: 20rem !important;
-   }
-}
-@media (min-width:344px) {
-     .logo-company{
-        margin-top: 2rem !important;
-    }
-}
-
-@media(width:768px){
-    .partner-logo {
-        width: 100px !important;
-        height: auto;
-        object-fit: contain; /* Menjaga proporsi gambar */
-        display: block;
-        margin: 0 auto;
-      }
-      .card-info{
-        height: 360px !important;
-       }
-       .about{
-        margin-top:4rem !important;
-       }
-
-     
 }
 
 @media(width:912px){
+    .hero h2{
+        margin-left: 6.4rem;
+    }
+    .hero h3{
+          margin-left: 6.5rem;
+      }
+    .hero a{
+          margin-left: 6.5rem;
+      }
+
       .navbar-toggler {
         background-color: white !important; /* Warna latar belakang putih untuk toggler */
         border: 2px solid #c87b08; /* Border emas */
         border-radius: 8px; /* Membuat tombol melengkung */
     }
-    
+
     /* Navbar Collapse */
     .navbar-collapse {
         background-color: #222222 !important; /* Warna latar belakang hitam */
@@ -728,7 +693,7 @@ nav .navbar-collapse ul li a{
         border-radius: 10px; /* Sudut melengkung */
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan */
     }
-    
+
     /* Link di Navbar */
     .navbar-collapse .nav-link,
     .navbar-collapse .dropdown-item {
@@ -739,7 +704,7 @@ nav .navbar-collapse ul li a{
         transition: all 0.3s ease; /* Transisi untuk hover */
         border-radius: 5px; /* Melengkungkan item menu */
     }
-    
+
     /* Hover Efek */
     .navbar-collapse .nav-link:hover,
     .navbar-collapse .dropdown-item:hover {
@@ -748,7 +713,7 @@ nav .navbar-collapse ul li a{
         transform: scale(1.05); /* Sedikit memperbesar */
         box-shadow: 0px 4px 10px rgba(200, 123, 8, 0.5); /* Efek bayangan hover */
     }
-    
+
     /* Dropdown Menu */
     .navbar-collapse .dropdown-menu {
         background-color: #222222; /* Warna hitam untuk dropdown */
@@ -756,145 +721,50 @@ nav .navbar-collapse ul li a{
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan */
         border-radius: 8px; /* Sudut melengkung */
     }
-    
+
     /* Dropdown Item */
     .navbar-collapse .dropdown-item {
         color: white !important; /* Teks dropdown putih */
         padding: 10px 20px; /* Spasi di dalam dropdown */
         font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
     }
-    
+
     /* Dropdown Item Hover */
     .navbar-collapse .dropdown-item:hover {
         background-color: #c87b08; /* Latar belakang emas saat hover */
         color: white; /* Warna teks tetap putih */
     }
-    .hero h2{
-        margin-left: 8rem;
-    }
-    .hero h3{
-          margin-left: 8rem;
-      }
-    .hero a{
-          margin-left: 8rem;
-      }
 
-   .section-title{
-    margin-top: 30px;
-   }
-   .card-info{
-    height: 360px !important;
-   }
-   .container-logo-patner{
-    margin-bottom: 18rem !important;
-   }
-   .partner-logo {
-    width: 100px !important;
-    height: auto;
-    object-fit: contain; 
-  }
 }
 
-@media(min-width:853px) and (max-width:870px){
-    .container-logo-patner{
-        margin-bottom: 11rem !important;
-       }
-    .partner-logo {
-        width: 100px !important;
+@media(width:540px){
+    .hero h2{
+        margin-left: 3.4rem;
+    }
+    .hero h3{
+          margin-left: 3.5rem;
+      }
+    .hero a{
+          margin-left: 3.5rem;
+      }
+      .partner-logo {
+        width: 170px !important;
         height: auto;
         object-fit: contain; /* Menjaga proporsi gambar */
         display: block;
-        margin: 0 auto;
+        margin: 0 auto; /* Pusatkan gambar */
       }
-          
-
-      .navbar-toggler {
-        background-color: white !important; /* Warna latar belakang putih untuk toggler */
-        border: 2px solid #c87b08; /* Border emas */
-        border-radius: 8px; /* Membuat tombol melengkung */
-    }
-    
-    /* Navbar Collapse */
-    .navbar-collapse {
-        background-color: #222222 !important; /* Warna latar belakang hitam */
-        color: white;
-        padding: 10px; /* Memberikan ruang dalam menu */
-        border-radius: 10px; /* Sudut melengkung */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan */
-    }
-    
-    /* Link di Navbar */
-    .navbar-collapse .nav-link,
-    .navbar-collapse .dropdown-item {
-        color: white !important; /* Warna teks putih */
-        padding: 10px 15px; /* Tambahkan padding untuk spasi */
-        text-transform: uppercase; /* Ubah teks menjadi huruf besar */
-        font-weight: 500; /* Buat teks lebih tebal */
-        transition: all 0.3s ease; /* Transisi untuk hover */
-        border-radius: 5px; /* Melengkungkan item menu */
-    }
-    
-    /* Hover Efek */
-    .navbar-collapse .nav-link:hover,
-    .navbar-collapse .dropdown-item:hover {
-        color: white; /* Warna teks tetap putih */
-        background-color: #c87b08; /* Latar belakang hover emas */
-        transform: scale(1.05); /* Sedikit memperbesar */
-        box-shadow: 0px 4px 10px rgba(200, 123, 8, 0.5); /* Efek bayangan hover */
-    }
-    
-    /* Dropdown Menu */
-    .navbar-collapse .dropdown-menu {
-        background-color: #222222; /* Warna hitam untuk dropdown */
-        border: none; /* Hilangkan border */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan */
-        border-radius: 8px; /* Sudut melengkung */
-    }
-    
-    /* Dropdown Item */
-    .navbar-collapse .dropdown-item {
-        color: white !important; /* Teks dropdown putih */
-        padding: 10px 20px; /* Spasi di dalam dropdown */
-        font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
-    }
-    
-    /* Dropdown Item Hover */
-    .navbar-collapse .dropdown-item:hover {
-        background-color: #c87b08; /* Latar belakang emas saat hover */
-        color: white; /* Warna teks tetap putih */
-    }
-    .hero h2{
-        margin-left: 8rem;
-    }
-    .hero h3{
-          margin-left: 8rem;
-      }
-    .hero a{
-          margin-left: 8rem;
-      }
-
-   .section-title{
-    margin-top: 30px;
-   }
-   .card-info{
-    height: 360px !important;
-   }
 }
 
-@media (min-width: 1100px) and (max-width: 1120px) and (min-height: 700px) and (max-height: 730px) {
-    .partner-logo {
-        width: 140px !important;
-        height: auto;
-        object-fit: contain; 
+@media(min-width:375px){
+    .about{
+        margin-top: 52px;
     }
+    
 }
-@media (min-width: 1024px) and (max-width: 1030px) and (min-height: 600px) and (max-height: 610px) {
-    .container-logo-patner{
-        margin-bottom: 1rem !important;
-       }
-    .partner-logo {
-        width: 140px !important;
-        height: auto;
-        object-fit: contain; 
+@media(width:344px){
+    .about{
+        margin-top: 52px;
     }
+    
 }
