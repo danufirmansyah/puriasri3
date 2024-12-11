@@ -655,7 +655,7 @@ nav .navbar-collapse ul li a{
 
 
  
-@media(min-width:768px){
+@media(min-width:768px) and (max-width:770px){
     .about{
         margin-top: 52px;
     }
