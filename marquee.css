@@ -1,0 +1,130 @@
+/* =====================
+   MARQUEE FULL WIDTH
+===================== */
+.marquee-wrapper.full-width {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  overflow: hidden;
+  padding: 20px 0;
+  cursor: grab;
+  touch-action: pan-y;
+}
+
+.marquee-wrapper.dragging {
+  cursor: grabbing;
+}
+
+/* =====================
+   TRACK
+===================== */
+.marquee-track {
+  display: flex;
+  gap: 32px;
+  will-change: transform;
+  user-select: none;
+}
+
+/* ❗ PAUSE HANYA SAAT DRAG */
+.marquee-wrapper.dragging .marquee-track {
+  animation-play-state: paused;
+}
+
+/* =====================
+   CARD
+===================== */
+.marquee-item {
+  flex: 0 0 auto;
+}
+
+.award-card {
+  width: 380px;
+  border-radius: 16px;
+}
+
+.award-card img {
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+/* =====================
+   ANIMATION
+===================== */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .award-card {
+    width: 300px;
+  }
+
+  .award-card img {
+    height: 200px;
+  }
+
+  .marquee-track {
+    gap: 20px;
+  }
+}
+
+
+/* =====================
+   WRAPPER
+===================== */
+.image-marquee-wrapper {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  overflow: hidden;
+  padding: 20px 0;
+  cursor: grab;
+  touch-action: pan-y;
+}
+
+.image-marquee-wrapper.dragging {
+  cursor: grabbing;
+}
+
+/* =====================
+   TRACK
+===================== */
+.image-marquee-track {
+  display: flex;
+  gap: 24px;
+  will-change: transform;
+  user-select: none;
+}
+
+/* =====================
+   ITEM
+===================== */
+.image-marquee-item {
+  flex: 0 0 auto;
+  padding: 0;
+}
+
+.image-marquee-item img {
+  height: 240px;
+  width: auto;
+  border-radius: 14px;
+  object-fit: cover;
+  pointer-events: none; /* ⬅️ penting untuk drag */
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .image-marquee-item img {
+    height: 180px;
+  }
+}
+

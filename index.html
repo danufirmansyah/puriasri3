@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puri Asri </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="marquee.css">
     
     <link rel="icon" type="image/x-icon" id="favicon" 
             href="assets/favicon.ico" />
@@ -361,28 +362,87 @@
     </div>
     </section>
 
-    <section class="house-carausel">
-      <h2 class="text-center text-dark mb-3">Hadir Untuk Anda dan Keluarga Tercinta</h2>
-      <div class="step-carausel">
-        <button class="btn btn-transparent" onclick="modalImageHouse('tahap1.jpeg')"><img src="assets/tahap1.jpeg" alt="tahap1"></button>
-        <button class="btn btn-transparent" onclick="modalImageHouse('tahap2.jpeg')"><img src="assets/tahap2.jpeg" alt="tahap1"></button>
-        <button class="btn btn-transparent" onclick="modalImageHouse('tahap3.jpeg')"><img src="assets/tahap3.jpeg" alt="tahap1"></button>
-        <button class="btn btn-transparent" onclick="modalImageHouse('tahap4.jpeg')"><img src="assets/tahap4.jpeg" alt="tahap1"></button>
-        <button class="btn btn-transparent" onclick="modalImageHouse('tahap5.jpeg')"><img src="assets/tahap5.jpeg" alt="tahap1"></button>
-    </div>
-    <div id="houseModal" class="modal">
+    <section class="house-carousel">
+      <h2 class="text-center text-dark mt-3 mb-3">
+        Hadir Untuk Anda dan Keluarga Tercinta
+      </h2>
+
+      <div class="image-marquee-wrapper">
+        <div class="image-marquee-track">
+          <!-- ITEM -->
+          <button class="btn btn-transparent image-marquee-item"
+            onclick="modalImageHouse('tahap1.jpeg')">
+            <img src="assets/tahap1.jpeg" alt="Tahap 1">
+          </button>
+
+          <button class="btn btn-transparent image-marquee-item"
+            onclick="modalImageHouse('tahap2.jpeg')">
+            <img src="assets/tahap2.jpeg" alt="Tahap 2">
+          </button>
+
+          <button class="btn btn-transparent image-marquee-item"
+            onclick="modalImageHouse('tahap3.jpeg')">
+            <img src="assets/tahap3.jpeg" alt="Tahap 3">
+          </button>
+
+          <button class="btn btn-transparent image-marquee-item"
+            onclick="modalImageHouse('tahap4.jpeg')">
+            <img src="assets/tahap4.jpeg" alt="Tahap 4">
+          </button>
+
+          <button class="btn btn-transparent image-marquee-item"
+            onclick="modalImageHouse('tahap5.jpeg')">
+            <img src="assets/tahap5.jpeg" alt="Tahap 5">
+          </button>
+
+          <!-- 🔁 DUPLICATE (WAJIB) -->
+          <button class="btn btn-transparent image-marquee-item"
+            onclick="modalImageHouse('tahap1.jpeg')">
+            <img src="assets/tahap1.jpeg" alt="Tahap 1">
+          </button>
+
+          <button class="btn btn-transparent image-marquee-item"
+            onclick="modalImageHouse('tahap2.jpeg')">
+            <img src="assets/tahap2.jpeg" alt="Tahap 2">
+          </button>
+
+          <button class="btn btn-transparent image-marquee-item"
+            onclick="modalImageHouse('tahap3.jpeg')">
+            <img src="assets/tahap3.jpeg" alt="Tahap 3">
+          </button>
+
+          <button class="btn btn-transparent image-marquee-item"
+            onclick="modalImageHouse('tahap4.jpeg')">
+            <img src="assets/tahap4.jpeg" alt="Tahap 4">
+          </button>
+
+          <button class="btn btn-transparent image-marquee-item"
+            onclick="modalImageHouse('tahap5.jpeg')">
+            <img src="assets/tahap5.jpeg" alt="Tahap 5">
+          </button>
+        </div>
+      </div>
+
+      <!-- MODAL (tetap pakai punyamu) -->
+      <div id="houseModal" class="modal">
         <span class="close" onclick="closeImageModal()">&times;</span>
         <img id="houseModalImage" class="modal-content" src="" alt="Modal Image">
       </div>
     </section>
 
-    <section class="awards-section ">
+
+    <section class="awards-section">
+      <!-- Judul tetap rapi -->
       <div class="container">
-        <h2 class="text-center mb-5">Penghargaan</h2>
-        <div class="row g-4 justify-content-center">
-          <!-- Kolom 1 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card bg-awward shadow-img">
+        <h2 class="text-center mb-3">Penghargaan</h2>
+      </div>
+
+      <!-- Marquee FULL WIDTH -->
+      <div class="marquee-wrapper full-width">
+        <div class="marquee-track draggable">
+          <!-- ITEM -->
+          <div class="marquee-item">
+            <div class="card bg-awward shadow-img award-card">
               <button class="btn btn-transparent" onclick="modalImageHouse('1.jpg')">
                 <img src="assets/1.jpg" class="card-img-top" alt="Penghargaan 1">
               </button>
@@ -391,9 +451,10 @@
               </div>
             </div>
           </div>
-          <!-- Kolom 2 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card bg-awward shadow-img">
+
+          <!-- ITEM 2 -->
+          <div class="marquee-item">
+            <div class="card bg-awward shadow-img award-card">
               <button class="btn btn-transparent" onclick="modalImageHouse('2.jpeg')">
                 <img src="assets/2.jpeg" class="card-img-top" alt="Penghargaan 2">
               </button>
@@ -402,9 +463,10 @@
               </div>
             </div>
           </div>
-          <!-- Kolom 3 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card bg-awward shadow-img">
+
+          <!-- ITEM 3 -->
+          <div class="marquee-item">
+            <div class="card bg-awward shadow-img award-card">
               <button class="btn btn-transparent" onclick="modalImageHouse('3.jpeg')">
                 <img src="assets/3.jpeg" class="card-img-top" alt="Penghargaan 3">
               </button>
@@ -413,9 +475,10 @@
               </div>
             </div>
           </div>
-          <!-- Kolom 4 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card bg-awward shadow-img">
+
+          <!-- ITEM 4 -->
+          <div class="marquee-item">
+            <div class="card bg-awward shadow-img award-card">
               <button class="btn btn-transparent" onclick="modalImageHouse('4.jpg')">
                 <img src="assets/4.jpg" class="card-img-top" alt="Penghargaan 4">
               </button>
@@ -424,9 +487,73 @@
               </div>
             </div>
           </div>
-          <!-- Kolom 5 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card bg-awward shadow-img">
+
+          <!-- ITEM 5 -->
+          <div class="marquee-item">
+            <div class="card bg-awward shadow-img award-card">
+              <button class="btn btn-transparent" onclick="modalImageHouse('5.jpg')">
+                <img src="assets/5.jpg" class="card-img-top" alt="Penghargaan 5">
+              </button>
+              <div class="card-body text-center">
+                <p class="card-title fw-bold text-white">Best Developer Award</p>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <!-- copy item lain + DUPLICATE semua item -->
+           <!-- ITEM -->
+          <div class="marquee-item">
+            <div class="card bg-awward shadow-img award-card">
+              <button class="btn btn-transparent" onclick="modalImageHouse('1.jpg')">
+                <img src="assets/1.jpg" class="card-img-top" alt="Penghargaan 1">
+              </button>
+              <div class="card-body text-center">
+                <p class="card-title fw-bold text-white">Loyalty Developer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="marquee-item">
+            <div class="card bg-awward shadow-img award-card">
+              <button class="btn btn-transparent" onclick="modalImageHouse('2.jpeg')">
+                <img src="assets/2.jpeg" class="card-img-top" alt="Penghargaan 2">
+              </button>
+              <div class="card-body text-center">
+                <p class="card-title fw-bold text-white">3rd Rank The Biggest Mortgage</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div class="marquee-item">
+            <div class="card bg-awward shadow-img award-card">
+              <button class="btn btn-transparent" onclick="modalImageHouse('3.jpeg')">
+                <img src="assets/3.jpeg" class="card-img-top" alt="Penghargaan 3">
+              </button>
+              <div class="card-body text-center">
+                <p class="card-title fw-bold text-white">Pembiayaan Komersial Terbaik</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 4 -->
+          <div class="marquee-item">
+            <div class="card bg-awward shadow-img award-card">
+              <button class="btn btn-transparent" onclick="modalImageHouse('4.jpg')">
+                <img src="assets/4.jpg" class="card-img-top" alt="Penghargaan 4">
+              </button>
+              <div class="card-body text-center">
+                <p class="card-title fw-bold text-white">Award Trophy</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 5 -->
+          <div class="marquee-item">
+            <div class="card bg-awward shadow-img award-card">
               <button class="btn btn-transparent" onclick="modalImageHouse('5.jpg')">
                 <img src="assets/5.jpg" class="card-img-top" alt="Penghargaan 5">
               </button>
@@ -524,6 +651,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js" integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <script src="custom.js"></script>
+    <script src="marquee.js"></script>
     
    
    
