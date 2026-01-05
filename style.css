@@ -222,6 +222,20 @@ nav .navbar-collapse ul li a{
                 0 0 15px 4px rgba(255, 223, 0, 0.5),  /* Shadow lebih kuat saat hover */
                 0 0 15px 4px rgba(254, 229, 65, 0.5),  /* Shadow lebih kuat saat hover */
 }
+.bg-partner {
+    background-color: #c89d53 !important; /* Warna emas */
+    border-radius: 15px; /* Opsional, tambahkan jika dibutuhkan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow dengan efek lembut */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animasi untuk efek hover */
+}
+
+.bg-partner:hover {
+    transform: scale(1.05); /* Perbesar saat hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 
+                0 12px 24px rgba(255, 255, 255, 0.2),
+                0 0 15px 4px rgba(255, 223, 0, 0.5),  /* Shadow lebih kuat saat hover */
+                0 0 15px 4px rgba(254, 229, 65, 0.5),  /* Shadow lebih kuat saat hover */
+}
 
 .spec-icon {
     width: 50px;

@@ -128,3 +128,86 @@
   }
 }
 
+/* =====================
+   PARTNER MARQUEE WRAPPER (kotak marquee)
+===================== */
+.partner-marquee-wrapper {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  overflow: hidden;
+  padding: 30px 0; /* Padding lebih besar */
+  cursor: grab;
+  touch-action: pan-y;
+}
+
+.partner-marquee-wrapper.dragging {
+  cursor: grabbing;
+}
+
+/* =====================
+   PARTNER MARQUEE TRACK (kontainer track marquee)
+===================== */
+.partner-marquee-track {
+  display: flex;
+  gap: 32px; /* Memberikan jarak antar logo lebih besar */
+  will-change: transform;
+  user-select: none;
+  animation: marquee 30s linear infinite; /* Menambahkan animasi untuk scroll */
+}
+
+/* =====================
+   PARTNER LOGO ITEM (gambar logo dalam kotak)
+===================== */
+.partner-marquee-item {
+  flex: 0 0 auto;
+  width: 300px; /* Ukuran kontainer logo yang lebih besar */
+  height: 200px; /* Sesuaikan tinggi logo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0;
+  background-color: #c89d53; /* Background gold */
+  border-radius: 16px; /* Sudut melengkung */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sedikit bayangan */
+}
+
+/* =====================
+   PARTNER LOGO IMAGE (gambar logo)
+===================== */
+.partner-logo {
+  max-width: 80%; /* Menyesuaikan ukuran gambar agar lebih besar */
+  max-height: 80%; /* Menyesuaikan tinggi gambar */
+  object-fit: contain; /* Agar logo tidak terdistorsi */
+  pointer-events: none;
+}
+
+/* =====================
+   ANIMATION (untuk efek scroll)
+===================== */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* =====================
+   RESPONSIVE (untuk mobile)
+===================== */
+@media (max-width: 768px) {
+  .partner-marquee-item {
+    width: 240px; /* Ukuran lebih kecil di mobile */
+    height: 180px;
+  }
+
+  .partner-logo {
+    max-height: 70%; /* Gambar sedikit lebih kecil di mobile */
+  }
+
+  .partner-marquee-track {
+    gap: 24px;
+  }
+}
