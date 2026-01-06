@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand-lg shadow-sm">
       <div class="container mt-3">
           <div class="logo-overlay"></div>
-          <a class="navbar-brand d-flex align-items-center p-2" href="#" >
+          <a class="navbar-brand d-flex align-items-center p-2" href="index.html" >
             <img src="assets/logoPA-samping.png" alt="Logo" class="me-2" style="height: 50px;">
         </a>
 
@@ -87,48 +87,72 @@
                 <div class="col-md-12  justify-content-center">
                     <img src="assets/logoPA-samping.png" class="mt-5 logo-company" alt="Logo Company" style="width: 450px;">
                 </div>
-                <div class="row g-4">
-                  <!-- Kolom Gambar -->
-                  <div class="col-md-6 col-lg-6 img-house">
-                    <!-- Gambar 1 -->
-                    <div class="card border-0 shadow m-0 m-md-4 m-lg-4 img-type ">
-                      <button class="border-0 p-0" onclick="modalImageHouse('denah-subsidi.jpg')">
-                        <img src="assets/denah-subsidi.jpg" class="card-img shadow-img text-center" alt="Denah Subsidi">
-                      </button>
+
+                <div class="container my-5">
+                  <!-- ROW GAMBAR -->
+                  <div class="row g-4 mb-4">
+
+                    <div class="col-md-6">
+                      <div class="spec-card">
+                        <button onclick="modalImageHouse('subsidi_real.jpg')">
+                          <img src="assets/subsidi_real.jpg" alt="Tampak Rumah">
+                        </button>
+                      </div>
                     </div>
-                    <!-- Gambar 2 -->
-                    <div class="card border-0 shadow m-0 m-md-4 m-lg-4 img-type mt-3">
-                      <button class="border-0 p-0" onclick="modalImageHouse('subsidi_real.jpg')">
-                        <img src="assets/subsidi_real.jpg" class="card-img shadow-img" alt="Subsidi Real">
-                      </button>
+
+                    <div class="col-md-6">
+                      <div class="spec-card">
+                        <button onclick="modalImageHouse('denah-subsidi.jpg')">
+                          <img src="assets/denah-subsidi.jpg" alt="Denah Subsidi">
+                        </button>
+                      </div>
                     </div>
+
                   </div>
-                
-                  <!-- Kolom Informasi -->
-                  <div class="col-md-6 col-lg-6">
-                    <h5 class="section-title fw-bold mb-1">Subsidi Type 30/60</h5>
-                    <p class="mb-2">Design Rumah Minimalis</p>
-                    <ul class=" mb-3">
-                      <li>Harga KPR: Rp. 185.000.000</li>
-                      <li>Luas Tanah: 60 M<sup>2</sup></li>
-                      <li>Luas Bangunan: 30 M<sup>2</sup></li>
-                    </ul>
-                    <strong>PROGRAM CICILAN</strong>
-                    <ul class="">
-                      <li>10 Thn: Rp. 1.931.700 / Bln (Flat Sampai Lunas)</li>
-                      <li>15 Thn: Rp. 1.437.100 / Bln (Flat Sampai Lunas)</li>
-                      <li>20 Thn: Rp. 1.197.000 / Bln (Flat Sampai Lunas)</li>
-                    </ul>
-                  </div>
-                
-                  <!-- Modal Gambar -->
-                  <div id="houseModal" class="modal">
-                    <span class="close" onclick="closeImageModal()">&times;</span>
-                    <img id="houseModalImage" class="modal-content" src="" alt="Modal Image">
+
+                  <!-- ROW DESKRIPSI -->
+                  <div class="row">
+                    <div class="col-12">
+
+                      <h5 class="fw-bold mb-1">Subsidi Type 30/60</h5>
+                      <p class="mb-3">Design Rumah Minimalis</p>
+
+                      <ul class="mb-3">
+                        <li>Harga KPR: Rp. 185.000.000</li>
+                        <li>Luas Tanah: 60 M<sup>2</sup></li>
+                        <li>Luas Bangunan: 30 M<sup>2</sup></li>
+                      </ul>
+
+                      <strong>PROGRAM CICILAN</strong>
+                      <ul class="mb-0">
+                        <li>10 Tahun: Rp. 1.931.700 / Bulan (Flat sampai lunas)</li>
+                        <li>15 Tahun: Rp. 1.437.100 / Bulan (Flat sampai lunas)</li>
+                        <li>20 Tahun: Rp. 1.197.000 / Bulan (Flat sampai lunas)</li>
+                      </ul>
+
+                      <div class="mt-4">
+                        <a
+                          href="https://api.whatsapp.com/send?phone=6282311312199&text=Hi%2C%20saya%20mendapatkan%20nomor%20ini%20dari%20Website.%20Saya%20tertarik%20dengan%20Perumahan%20Puri%20Asri%203%2C%20Jelaskan%20ke%20Saya%20untuk%20detailnya.%0A%0ANama%20Saya%20%3A"
+                          target="_blank"
+                          class="btn btn-success btn-lg w-100 d-flex align-items-center justify-content-center gap-2 promo-btn"
+                        >
+                          <i class="fa-brands fa-whatsapp fs-4"></i>
+                          Dapatkan Promo
+                        </a>
+
+                        <small class="text-muted d-block text-center mt-2">
+                          Respon cepat via WhatsApp
+                        </small>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                
-                
+
+                <!-- MODAL (cukup SATU di luar loop) -->
+                <div id="houseModal" class="modal">
+                  <span class="close" onclick="closeImageModal()">&times;</span>
+                  <img id="houseModalImage" class="modal-content" alt="Preview">
+                </div>             
                 
             </div>
 
@@ -141,76 +165,53 @@
       </a>   
   
 
-      <footer class="footer py-5">
-        <div class="container container-logo-patner">
-          <div class="row text-white">
-            <!-- Logo Section -->
-            <div class="col-md-4 text-center text-md-center mb-4 mb-md-0 mb-sm-0">
-              <img src="assets/logo-footer.png" alt="Puri Asri Logo" class="mb-3" style="max-width: 350px;">
-            </div>
-      
-            <!-- Marketing Gallery and Office Hours -->
-            <div class="col-md-4 text-center mb-4 mb-md-0 mb-sm-0">
-              <h5 class="fw-bold">Marketing Gallery</h5>
-              <p class="mb-1">Jl. Rw. Gembira, Sukamaju, Kec. Jonggol, Bogor</p>
-              <p class="mb-3">Jawa Barat 16830</p>
-              <h5 class="fw-bold">Office Hour</h5>
-              <p class="mb-1">Senin – Jumat | 09:00 – 17:00 WIB</p>
-              <p>Sabtu – Minggu | 09:00 – 18:00 WIB</p>
-              <div>
-                <a href="#"  class="btn btn-sm button-custom rounded-circle me-2">
-                    <i class="fa-brands fa-instagram fs-4 text-white p-2"></i>
-                </a>
-                <a href="https://www.tiktok.com/@rodiallbantani?_t=8rgcq9PwFoQ&_r=1"  class="btn btn-sm button-custom rounded-circle">
-                    <i class="fa-brands fa-tiktok fs-4 text-white p-2 "></i>
-                </a>
-              </div>
-            </div>
-    
-            <!-- Partners Section -->
-            <div class="col-md-4 text-center text-md-end">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="container text-center ">
-                      <div class="row justify-content-center align-items-center">
-                        <h5 class="fw-bold mb-4">Bekerjasama Dengan:</h5>
-                        <div class="col-6 col-md-6 mb-3 ">
-                          <img src="assets/btn.png" alt="BTN Logo" class="partner-logo shadow-img" style="height: 45px; ">
-                        </div>
-                        <div class="col-6 col-md-6 mb-3 ">
-                          <img src="assets/btn-syariah.png" alt="BTN Syariah Logo" class="partner-logo shadow-img" style="height: 45px; ">
-                        </div>
-                        <div class="col-6 col-md-6 mb-3">
-                          <img src="assets/bri.png" alt="BRI Logo" class="partner-logo shadow-img" style="height: 45px; ">
-                        </div>
-                        <div class="col-6 col-md-6 mb-3">
-                          <img src="assets/bankdki.jpg" alt="BANK DKI Logo" class="partner-logo shadow-img" style="height: 45px; ">
-                        </div>
-                        <div class="col-6 col-md-6 mb-3">
-                          <img src="assets/bankbjb.png" alt="Bank BJB Logo"  class="partner-logo shadow-img" style="height: 85px; ">
-                        </div>
-                        <div class="col-6 col-md-6 mb-3">
-                          <img src="assets/bjb-syariah.png" alt="BJB Syariah Logo" class="partner-logo shadow-img" style="height: 85px; ">
-                        </div>
-                        <div class="col-12 col-md-12 mb-3">
-                          <img src="assets/pupr.png" alt="PUPR Logo" class="partner-logo shadow-img" style="">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-              
-              
-            </div>
+      <footer class="footer py-3">
+      <div class="container">
+
+        <div class="row align-items-center text-white gy-3">
+
+          <!-- LOGO -->
+          <div class="col-md-6 text-center text-md-start">
+            <img src="assets/logo-footer.png"
+                alt="Puri Asri Logo"
+                class="footer-logo">
           </div>
-          <div class="row mt-4">
-            <div class="col text-center text-white">
-              <p class="mb-0">Copyright © 2024. All Rights Reserved. — Puri Asri 3</p>
+
+          <!-- INFO -->
+          <div class="col-md-6 text-center text-md-end">
+            <h6 class="fw-bold mb-2">Marketing Gallery</h6>
+            <p class="mb-1 small">
+              Jl. Rw. Gembira, Sukamaju<br>
+              Kec. Jonggol, Bogor<br>
+Jawa Barat 16830
+            </p>
+
+            <h6 class="fw-bold mt-3 mb-2">Office Hour</h6>
+            <p class="mb-3 small">
+              Senin – Jumat : 09.00 – 17.00 WIB<br>
+              Sabtu – Minggu : 09.00 – 18.00 WIB
+            </p>
+
+            <div>
+              <a href="https://www.instagram.com/puri.asri3" class="footer-social me-2">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.tiktok.com/@puriasri3" class="footer-social">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
             </div>
-          </div>
+          </div>  
+
         </div>
-      </footer>
+
+        <hr class="footer-divider my-3">
+
+        <div class="text-center text-white small">
+          Copyright © 2024. All Rights Reserved. — Puri Asri 3
+        </div>
+
+      </div>
+    </footer>
       
     <!-- bootstrap --> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

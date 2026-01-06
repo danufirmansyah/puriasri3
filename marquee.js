@@ -192,26 +192,27 @@
   const track = wrapper.querySelector('.partner-marquee-track');
 
   let posX = 0;
-  let speed = -0.5; // auto scroll speed
+  let speed = -0.4;
   let isDown = false;
   let isDragging = false;
   let startX = 0;
 
   const DRAG_THRESHOLD = 5;
 
-  const loop = () => {
+  function update() {
     if (!isDown) {
       posX += speed;
     }
 
-    const width = track.scrollWidth / 2;
+    const halfWidth = track.scrollWidth / 2;
 
-    if (posX <= -width) posX += width;
-    if (posX >= 0) posX -= width;
+    // infinite loop (AMAN)
+    if (posX <= -halfWidth) posX += halfWidth;
+    if (posX > 0) posX -= halfWidth;
 
-    track.style.transform = `translateX(${posX}px)`;
-    requestAnimationFrame(loop);
-  };
+    track.style.transform = `translate3d(${posX}px,0,0)`;
+    requestAnimationFrame(update);
+  }
 
   // =====================
   // MOUSE
@@ -219,15 +220,15 @@
   wrapper.addEventListener('mousedown', (e) => {
     isDown = true;
     isDragging = false;
-    startX = e.pageX;
+    startX = e.clientX;
     wrapper.classList.add('dragging');
   });
 
   window.addEventListener('mousemove', (e) => {
     if (!isDown) return;
 
-    const delta = e.pageX - startX;
-    startX = e.pageX;
+    const delta = e.clientX - startX;
+    startX = e.clientX;
 
     if (Math.abs(delta) > DRAG_THRESHOLD) {
       isDragging = true;
@@ -280,5 +281,6 @@
     }
   }, true);
 
-  loop();
+  update();
 })();
+
