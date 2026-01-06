@@ -782,3 +782,188 @@ nav .navbar-collapse ul li a{
     }
     
 }
+
+.footer {
+  background: #c89d53;
+}
+
+.footer-logo {
+  max-width: 220px; /* ⬅️ DIPERKECIL */
+}
+
+.footer-info p {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.footer h6 {
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+
+.footer p.small {
+  font-size: 15px;
+  line-height: 1.45;
+  opacity: 0.9;
+}
+
+
+.footer-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #e1b76a;
+  color: #fff;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.footer-social:hover {
+  background: #e1b76a;
+  color: #000;
+}
+
+.footer-divider {
+  border-color: rgba(255,255,255,0.15);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer-logo {
+    max-width: 180px;
+  }
+}
+
+/* Background section */
+.bg-custom {
+  background-color: #c89d53;
+}
+
+/* Wrapper biar tidak terlalu melebar */
+.house-info-wrapper {
+  max-width: 1200px;
+  margin: 0 16px;
+}
+
+/* Card */
+.card-house-info {
+  width: 100%;
+  max-width: 360px;          /* ⬅️ bikin jarak konsisten */
+  border-radius: 16px;
+}
+
+/* Icon rumah */
+.icon-house {
+  max-width: 100px;
+}
+
+/* Alamat dibatasi biar tinggi sama */
+.address-text {
+  font-size: 12px;
+  line-height: 1.4;
+  min-height: 34px;
+  margin-bottom: 12px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Card body rapi */
+.card-house-info .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card-house-info {
+    max-width: 100%;
+  }
+}
+
+
+
+/* SECTION */
+.lp-about-section {
+  background-color: #f2f0f0;
+}
+
+/* LOGO */
+.lp-about-logo {
+  max-width: 420px;
+}
+
+/* TEXT */
+.lp-about-text {
+  color: #6c757d;
+  font-size: 15.5px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* DIVIDER */
+.lp-about-divider {
+  width: 60px;
+  height: 4px;
+  background-color: #c89d53;
+  border-radius: 2px;
+}
+
+/* BUTTON */
+/* Tombol Tentang Kami - Gold */
+.btn-custom-lp-about {
+  background: linear-gradient(135deg, #c29425, #e2b24e);
+  color: #1a1a1a;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(212, 175, 55, 0.35);
+}
+
+.btn-custom-lp-about:hover {
+  background: linear-gradient(135deg, #c29425, #e2b24e);
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.45);
+}
+
+.btn-custom-lp-about i {
+  transition: transform 0.3s ease;
+}
+
+.btn-custom-lp-about:hover i {
+  transform: translateX(4px);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .lp-about-logo {
+    max-width: 300px;
+  }
+
+  .lp-about-text {
+    text-align: center;
+  }
+
+  .btn-custom-lp-about {
+    justify-content: center;
+  }
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
