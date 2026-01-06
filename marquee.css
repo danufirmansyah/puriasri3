@@ -39,13 +39,28 @@
 .award-card {
   width: 380px;
   border-radius: 16px;
+  overflow: hidden;
 }
 
 .award-card img {
+  width: 100%;
   height: 260px;
-  object-fit: cover;
-  border-radius: 16px 16px 0 0;
+  object-fit: contain; /* ⬅️ INI KUNCINYA */
+  background-color: #c89d53;
+  padding: 6px;
 }
+
+.award-card .card-body {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.award-card .card-title {
+  margin-bottom: 0;
+  font-size: 1.1rem;   /* opsional, sedikit lebih kecil */
+  line-height: 1.3;
+}
+
 
 /* =====================
    ANIMATION
@@ -69,13 +84,13 @@
 
   .award-card img {
     height: 200px;
+    padding: 4px;
   }
 
   .marquee-track {
     gap: 20px;
   }
 }
-
 
 /* =====================
    WRAPPER
@@ -149,7 +164,7 @@
 ===================== */
 .partner-marquee-track {
   display: flex;
-  gap: 32px; /* Memberikan jarak antar logo lebih besar */
+  gap: 24px; /* Memberikan jarak antar logo lebih besar */
   will-change: transform;
   user-select: none;
 }
@@ -158,18 +173,19 @@
    PARTNER LOGO ITEM (gambar logo dalam kotak)
 ===================== */
 .partner-marquee-item {
-  flex: 0 0 auto;
-  width: 200px; /* Ukuran kontainer logo yang lebih besar */
-  height: 200px; /* Sesuaikan tinggi logo */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  padding: 0;
-  background-color: #c89d53; /* Background gold */
-  border-radius: 16px; /* Sudut melengkung */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sedikit bayangan */
+  background: #fff;
+  border: 3px solid #eee;
+  border-radius: 12px;
 }
+
+.partner-marquee-item:hover .partner-logo {
+  transform: scale(1.05);
+}
+
+.partner-logo {
+  transition: transform 0.3s ease;
+}
+
 
 /* =====================
    PARTNER LOGO IMAGE (gambar logo)
@@ -210,7 +226,7 @@
   }
 
   .partner-marquee-track {
-    gap: 24px;
+    gap: 16px;
   }
 }
 
